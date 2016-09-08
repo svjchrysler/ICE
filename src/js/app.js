@@ -262,23 +262,23 @@ $(document).ready(function(){
 	})
 
 	$('#modal-2').click(function() {
-		$('#modal2').openModal()	
+		$('#modal1').openModal()	
 	})
 
 	$('#modal-3').click(function() {
-		$('#modal3').openModal()
+		$('#modal1').openModal()
 	})
 
 	$('#modal-4').click(function() {
-		$('#modal4').openModal()
+		$('#modal1').openModal()
 	})
 
 	$('#modal-5').click(function() {
-		$('#modal5').openModal()
+		$('#modal1').openModal()
 	})
 
 	$('#modal-6').click(function() {
-		$('#modal6').openModal()
+		$('#modal1').openModal()
 	})
 
 	var el = '.js-menu';
@@ -295,4 +295,10 @@ $(document).ready(function(){
 
   	var el4 = '.js-menu-4';
   	var myMenu = cssCircleMenu(el4)
+
+  	var image = $('#icelogo').attr('src')
+  	var rub = new SuperGif({ gif: image })
+  	rub.load(function() {
+  		console.log('iniciando animacion')
+  	})
 });

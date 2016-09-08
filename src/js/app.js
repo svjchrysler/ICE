@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 	$('#iddatahub').click(function() {
 		var changefondo = `<iframe class="iframe-map" 
-								src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15197.103211478841!2d-63.17920027905273!3d-17.778730439584365!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbo!4v1473089921364" 
+								src="http://159.203.182.38/visualizadorV2/" 
 								></iframe>`
 
 		var antiguofondo = `<img id="img-datahub" src="src/image/datahub.png" style="transform: display: block;" />`

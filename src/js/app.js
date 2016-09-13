@@ -14,13 +14,11 @@ rub.load()*/
 
 //console.log($('#img-gif')[0].gifplayer())
 
-// setTimeout(function() {
-	
-// }, 7000)
+setTimeout(function() {
+	$('#loading').addClass('hide')
+}, 7000)
 
 $(document).ready(function(){
-
-	$('#loading').addClass('hide')
 
 	$('.parallax').parallax();
 

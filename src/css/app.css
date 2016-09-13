@@ -366,3 +366,45 @@ textarea {
 .padding-p {
 	padding: 8px;
 }
+
+.altura-estadistica {
+	height: 80vh !important;
+	overflow: scroll !important;
+	overflow-x: hidden !important;
+	padding: 0 !important;
+}
+
+.altura-estadistica-up {
+	height: 40vh !important;
+	overflow: hidden !important;
+}
+
+.altura-estadistica-middle {
+	height: 20vh !important;
+	overflow: hidden !important;
+}
+
+.altura-estaditica-down {
+	height: 40vh !important;
+	overflow: hidden !important;
+}
+
+.altura-estadistica-down-total {
+	height: 55vh !important;
+	overflow: hidden !important;
+}
+
+.altura-up-porcion {
+	height: 20vh !important;
+	overflow: hidden !important;
+}
+
+.altura-down-porcion {
+	height: 20vh !important;
+	overflow: hidden !important;
+}
+
+.background-somos {
+	background: url('../image/background.png') no-repeat;
+	background-size: cover;
+}

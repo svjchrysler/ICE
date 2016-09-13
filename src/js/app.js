@@ -1,4 +1,27 @@
+
+
+/*var rub = new SuperGif({ gif: $('#img-gif')[0] } );
+
+// rub.load(function() {
+
+// })
+
+// $('.jsgif').addClass('hide')
+console.log(rub.get_auto_play)
+rub.load()*/
+
+//var gifr = new GifPlayer($('.gifplayer')[0], { label: 'play' })
+
+//console.log($('#img-gif')[0].gifplayer())
+
+// setTimeout(function() {
+	
+// }, 7000)
+
 $(document).ready(function(){
+
+	$('#loading').addClass('hide')
+
 	$('.parallax').parallax();
 
 	$('#btnsomos').click(function(e) {
@@ -7,7 +30,7 @@ $(document).ready(function(){
 		var posicion = $("#idsomos").offset().top;
 		$("html, body").animate({
     		scrollTop: posicion
-		}, 	1000);
+		}, 	700);
 	})
 
 	$('#btnestudios').click(function(e) {
@@ -16,7 +39,7 @@ $(document).ready(function(){
 		var posicion = $("#idestudios").offset().top;
 		$("html, body").animate({
     		scrollTop: posicion
-		}, 	1000);
+		}, 	700);
 	})
 
 
@@ -26,7 +49,7 @@ $(document).ready(function(){
 		var posicion = $("#iddatahub").offset().top;
 		$("html, body").animate({
     		scrollTop: posicion
-		}, 	1000);
+		}, 	700);
 	})
 
 	$('#btnboletin').click(function(e) {
@@ -35,7 +58,7 @@ $(document).ready(function(){
 		var posicion = $("#idnoticias").offset().top;
 		$("html, body").animate({
     		scrollTop: posicion
-		}, 	1000);
+		}, 	700);
 	})
 
 
@@ -45,7 +68,7 @@ $(document).ready(function(){
 		var posicion = $("#idcontacto").offset().top;
 		$("html, body").animate({
     		scrollTop: posicion
-		}, 	2000);
+		}, 	700);
 	})
 
 	$('#iddatahub').click(function() {
@@ -66,6 +89,92 @@ $(document).ready(function(){
 			$('#iddatahub').addClass('volcado')
 			$('#iddatahub .parallax img').replaceWith(changefondo)
 		}
+	})
+
+	$('#more-data').click(function() {
+
+		var template_estadistica = `<div class="parallax-container height-vh align-vertical-horizontal" id="idestudios">
+		<div class="container-fluid margin-top-all" id="slide-estadistica">
+			<div class="row altura-estadistica margin-botton">
+				<div class="col s12">
+					<div class="row altura-estadistica-up">
+						<div class="col s3">
+							<a href="estadistica.html"><img src="src/image/image-estadisticas/cuadrado.jpg" width="100%"></a>
+						</div>
+						<div class="col s2">
+							<a href="estadistica.html"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
+						</div>
+						<div class="col s5 altura-estadistica-down-total">
+							<div class="row altura-up-porcion">
+								<div class="col s7 ">
+									<a href="#!"><img src="src/image/image-estadisticas/horizontal1.jpg" width="100%"></a>
+								</div>
+								<div class="col s5">
+									<a href="#!"><img src="src/image/image-estadisticas/featured31.jpg" width="100%"></a>
+								</div>
+							</div>
+							<div class="row altura-down-porcion">
+								<div class="col s5">
+									<a href="#!"><img src="src/image/image-estadisticas/featured31.jpg" width="100%"></a>
+								</div>
+								<div class="col s7">
+									<a href="#!"><img src="src/image/image-estadisticas/horizontal1.jpg" width="100%"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col s2">
+							<a href="#!"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col s10 altura-estadistica-down-total">
+							<div class="row altura-estadistica-middle">
+								<div class="col s3">
+									<a href="estadistica.html"><img src="src/image/image-estadisticas/featured31.jpg" width="100%"></a>
+								</div>
+								<div class="col s3">
+									<a href="#!"><img src="src/image/image-estadisticas/horizontal1.jpg" width="100%"></a>
+								</div>
+								<div class="col s3">
+									<a href="#!"><img src="src/image/image-estadisticas/horizontal1.jpg" width="100%"></a>
+								</div>
+								<div class="col s3">
+									<a href="#!"><img src="src/image/image-estadisticas/horizontal1.jpg" width="100%"></a>
+								</div>
+							</div>
+							<div class="row altura-estadistica-middle">
+								<div class="col s2">
+									<a href="#!"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
+								</div>
+								<div class="col s3">
+									<a href="#!"><img src="src/image/image-estadisticas/cuadrado.jpg" width="100%"></a>
+								</div>
+								<div class="col s2">
+									<a href="#!"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
+								</div>
+								<div class="col s3">
+									<a href="#!"><img src="src/image/image-estadisticas/cuadrado.jpg" width="100%"></a>
+								</div>
+								<div class="col s2">
+									<a href="#!"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col s2 altura-estadistica-down-total">
+							<a href="#!"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>`
+
+		$('.remove-option').addClass('hide')
+		$('#idestudios').addClass('volcado')
+		$('#idestudios').replaceWith(template_estadistica)
+
+
 	})
 
 	$(window).scroll(function() {
@@ -296,9 +405,4 @@ $(document).ready(function(){
   	var el4 = '.js-menu-4';
   	var myMenu = cssCircleMenu(el4)
 
-  	var image = $('#icelogo').attr('src')
-  	var rub = new SuperGif({ gif: image })
-  	rub.load(function() {
-  		console.log('iniciando animacion')
-  	})
 });

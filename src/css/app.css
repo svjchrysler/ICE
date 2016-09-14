@@ -70,7 +70,7 @@
 }
 
 .tamano-image {
-	width: 100%;
+	width: 100% !important;
 }
 
 .option {
@@ -112,7 +112,7 @@
 }
 
 .tamano-image-center {
-	width: 30em;
+	width: 40em;
 }
 
 .padding-top-center {

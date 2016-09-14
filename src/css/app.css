@@ -74,7 +74,7 @@
 }
 
 .option {
-	color: #6FD591 !important;
+	color: #4ACA74 !important;
 	font-weight: 700;
 }
 
@@ -82,52 +82,33 @@
 	color: #FFF !important;
 }
 
-.option-1 {
-	padding: 1em !important;
-}
-
-.option-1:hover {
-	background-color: #6FD591;
-}
-
 .option-active {
-	background-color: #6FD591;	
+	background-color: #4ACA74;
+	color: #FFF !important;
 }
 
 .option-color-active {
 	color: #FFF !important;	
 }
 
-.option-2 {
-	padding: 1em !important;
+.option-1:hover {
+	background-color: #4ACA74;
 }
 
 .option-2:hover {
-	background-color: #6FD591;
-}
-
-.option-3 {
-	padding: 1em !important;
+	background-color: #4ACA74;
 }
 
 .option-3:hover {
-	background-color: #6FD591;
-}
-
-.option-4 {
-	padding: 1em !important;
+	background-color: #4ACA74;
 }
 
 .option-4:hover {
-	background-color: #6FD591;
-}
-
-.option-5 {
-	padding: 1em !important;
+	background-color: #4ACA74;
 }
 
 .option-5:hover {
-	background-color: #6FD591;
+	background-color: #4ACA74;
 }
 
 .tamano-image-center {
@@ -234,7 +215,7 @@ textarea {
 	width: 100% !important; 
 	left:0 !important; 
 	top:0 !important; 
-	padding: 20px !important;
+	padding: 0 !important;
 }
 
 .padding-circle {
@@ -307,6 +288,10 @@ textarea {
 	margin-top: 25vh !important;
 }
 
+.margin-top-all-exec-ex {
+	margin-top: 22vh !important;
+}
+
 .btn-salir-modal {
 	color: #000 !important;
 	font-size: 2em; right:0 !important;
@@ -347,6 +332,7 @@ textarea {
 .align-mp {
 	margin:0 !important; 
 	padding:0 !important;
+	background: none !important;
 }
 
 .height-banner {
@@ -407,4 +393,47 @@ textarea {
 .background-somos {
 	background: url('../image/background.png') no-repeat;
 	background-size: cover;
+}
+
+.background-up {
+	background-color: #4ACA74 !important;
+	height: 4em !important;
+}
+
+.align-datahub {
+	top: -8vh !important;	
+}
+
+.custom-option {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.color-up {
+	color:#FFF;
+}
+
+.custom-box {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.margin-top-btn {
+	margin-top: 1em;
+}
+
+.background-close {
+	height: 40px !important;
+	width: 40px !important;
+	border-radius: 20px !important;
+	background-color: #808080 !important;
+}
+
+.design-btn {
+	color: #FFF !important;	
+	font-weight: 700 !important;
+}
+
+.center-text {
+	text-align: center;
 }

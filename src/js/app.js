@@ -14,60 +14,93 @@ rub.load()*/
 
 //console.log($('#img-gif')[0].gifplayer())
 
-setTimeout(function() {
-	$('#loading').addClass('hide')
-}, 7000)
+// $('img').removeData()
+
+// setTimeout(function() {
+// 	$('#loading').addClass('hide')
+// }, 6500)
 
 $(document).ready(function(){
 
+	$(window).resize(function() {
+		if ($(window).width() < 620 || $(document).width() < 620) {
+			$('#idmenu').removeClass('center-menu')	
+		}
+
+		if($(window).width() > 620 || $(document).width() > 620) {
+			$('#idmenu').addClass('center-menu')
+		}
+		
+	})
+
 	$('.parallax').parallax();
 
-	$('#btnsomos').click(function(e) {
-
+	function posicionarSomos(e) {
 		e.preventDefault()
 		var posicion = $("#idsomos").offset().top;
 		$("html, body").animate({
     		scrollTop: posicion
 		}, 	700);
+	}
+
+
+	// $('#up-somos').click(function(e) {
+	// 	posicionarSomos(e)
+	// })
+
+	$('#btnsomos').click(function(e) {
+		posicionarSomos(e)
 	})
 
 	$('#btnestudios').click(function(e) {
+		posicionarEstadisticas(e)
+	})
 
+	function posicionarEstadisticas(e) {
 		e.preventDefault()
 		var posicion = $("#idestudios").offset().top;
 		$("html, body").animate({
     		scrollTop: posicion
 		}, 	700);
-	})
+	}
 
 
 	$('#btndatahub').click(function(e) {
+		posicionarDataHub(e)
+	})
 
+	function posicionarDataHub(e) {
 		e.preventDefault()
 		var posicion = $("#iddatahub").offset().top;
 		$("html, body").animate({
     		scrollTop: posicion
 		}, 	700);
-	})
+	}
 
 	$('#btnboletin').click(function(e) {
+		posicionarBoletin(e)
+	})
 
+	function posicionarBoletin(e) {
 		e.preventDefault()
 		var posicion = $("#idnoticias").offset().top;
 		$("html, body").animate({
     		scrollTop: posicion
 		}, 	700);
-	})
+	}
 
 
 	$('#btncontacto').click(function(e) {
+		posicionarContacto(e)
+	})
 
+	function posicionarContacto(e) {
 		e.preventDefault()
 		var posicion = $("#idcontacto").offset().top;
 		$("html, body").animate({
     		scrollTop: posicion
 		}, 	700);
-	})
+	}
 
 	$('#iddatahub').click(function() {
 		var changefondo = `<iframe class="iframe-map" 

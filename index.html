@@ -2,43 +2,44 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="Cache-control" content="no-cache">
-		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv='cache-control' content='no-cache'>
+		<meta http-equiv='expires' content='0'>
+		<meta http-equiv='pragma' content='no-cache'>
 		<title>ICE</title>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="src/css/materialize.min.css">
 		<link rel="stylesheet" type="text/css" href="src/css/app.css">
 		<link rel="stylesheet" type="text/css" href="src/css/circleMenu.css">
-
+		<link rel="stylesheet" type="text/css" href="src/css/menu.css">
 	</head>
 <body class="loading-inicio">
 	<div class="container-fluid position-relative background-color-nav altura">
 		<div class="position-absolute background-color-nav">
-			<div class="row margin-botton padding-top-nav background-color-nav">
-				<div class="col m6 l6">
+			<div class="row margin-botton padding-top-nav background-color-nav hide-on-small-only">
+				<div class="col m7 l6">
 					<div class="row margin-botton">
-						<div class="col m3 l3">
-							<a href="index.html">
+						<div class="col s8 m5 l3">
+							<a href="./">
 								<img src="src/image/logoice.png" class="tamano-image">	
 							</a>		
 						</div>
-						<div class="col m4 l3">
+						<div class="col m5 l3 hide-on-small-only">
 							<img src="src/image/logogobernacion.png" width="100%" >
 						</div>
-						<div class="col m5 l6"></div>
+						<div class="col s4 m2 l6"></div>
 					</div>
 				</div>
-				<div class="col m6 l6">
+				<div class="col m5 l6">
 					<div class="row margin-botton">
-						<div class="col m9 l9 margin-search">
+						<div class="col m7 l9 margin-search">
 							<input type="search" placeholder="Buscar Algo?">
 						</div>
-						<div class="col m2 l2 margin-boton-search">
+						<div class="col m3 l2 margin-boton-search">
 							<button class="btn">
 								<i class="material-icons">search</i>
 							</button>
 						</div>
-						<div class="col m1 l1 right-align margin-top-redes">
+						<div class="col m2 l1 right-align margin-top-redes">
 							<a href="#"><img src="src/image/facebook-logo.svg" width="100%"></a><br>
 							<a href="#"><img src="src/image/twitter-logo.svg" width="100%"></a>
 						</div>
@@ -46,43 +47,22 @@
 				</div>
 			</div>
 
-			<div class="row background-color-nav center-align margin-botton">
-				<div class="col s1"></div>
-				
-				<a href="#" class="option" id="btnsomos">	
-					<div class="col s2 option-1 option-active option-color-active">
-						<span>¿Quiénes somos?</span>
-					</div>
-				</a>
-				<a href="#" class="option" id="btndatahub">
-					<div class="col s2 option-2">
-						<span>Data HUB</span>
-					</div>
-				</a>
-				<a href="#" class="option" id="btnestudios">
-					<div class="col s2 option-3">
-						<span>Estadisticas</span>	
-					</div>
-				</a>
-				<a href="#" class="option" id="btnboletin">
-					<div class="col s2 option-4">
-						<span>Noticias / Boletín</span>	
-					</div>
-				</a>
-				<a href="#" class="option" id="btncontacto">
-					<div class="col s2 option-5">
-						<span>Contacto</span>	
-					</div>
-				</a>
-
-				<div class="col s1"></div>
-			</div>
+			<nav class="clearfix"> 
+				<ul class="clearfix center-menu" id="idmenu">
+					<li ><a class="option-1 option-active" href="#" id="btnsomos">Quienes somos?</a></li>
+					<li ><a class="option-2 option" href="#" id="btndatahub">Data HUB</a></li>
+					<li ><a class="option-3 option" href="#" id="btnestudios">Estadisticas</a></li>
+					<li ><a class="option-4 option" href="#" id="btnboletin">Noticias / Boletin</a></li>
+					<li ><a class="option-5 option" href="#" id="btncontacto">Contacto</a></li>
+				</ul>
+				<a href="#" class="color-text-menu" id="pull">ICE</a>
+			</nav>
 		</div>
 	</div>
 
-	<div id="loading" class="gif-player container-fluid align-vertical-horizontal position-absolute width-full height-vh" style="z-index:2030; left:0; top:0; background-color: rgba(245, 245, 245, 1);">
+	<!-- <div id="loading" class="gif-player container-fluid align-vertical-horizontal position-absolute width-full height-vh" style="z-index:2030; left:0; top:0; background-color: rgba(245, 245, 245, 1);">
 		<img id="img-gif" src="src/image/logoweb.gif" data-mode="gif" data-gif="src/image/logoweb.gif" />
-	</div>
+	</div> -->
 
 	<div class="parallax-container height-vh align-vertical-horizontal background-somos" id="idsomos">
 		<div class="row">
@@ -99,14 +79,20 @@
 	</div>
 
 	<div class="parallax-container height-vh align-vertical-horizontal" id="iddatahub">
-    	<div class="parallax margin-top-all">
+    	<div class="parallax margin-top-all-exec">
 			<img id="img-datahub" src="src/image/datahub.png" />
 		</div>
   	</div>
 
+  	<!-- <div class="row width-full position-relative custom-option">
+		<div class="col s12 width-full center-align align-vertical-horizontal position-abs align-datahub background-up">
+			<a href="#!" id="up-somos" class="color-up"><i class="large material-icons">keyboard_arrow_up</i></a>
+		</div>
+	</div> -->
+
   	<div class="parallax-container height-vh align-vertical-horizontal background-somos" id="idestudios">
 
-    	<div class="row margin-top-all-exec width-full">
+    	<div class="row margin-top-all-exec width-full custom-box">
 
     		<div class="col s1"></div>
 
@@ -118,17 +104,17 @@
 				  	<ul class="c-circle-menu__items">
 				    	<li class="c-circle-menu__item padding-circle">
 				      		<a href="#!" class="c-circle-menu__link">
-			        			<img src="src/image/icons/agricultura.png" />
+			        			<img src="src/image/icons/agricultura.png" class="position-abs custom-circle" />
 				      		</a>
 				    	</li>
 				    	<li class="c-circle-menu__item padding-circle">
 				      		<a href="#!" class="c-circle-menu__link">
-			        			<img src="src/image/icons/agricultura.png" />
+			        			<img src="src/image/icons/agricultura.png" class="position-abs custom-circle" />
 				      		</a>
 				    	</li>
 				    	<li class="c-circle-menu__item padding-circle">
 				      		<a href="#!" class="c-circle-menu__link">
-			        			<img src="src/image/icons/agricultura.png" />
+			        			<img src="src/image/icons/agricultura.png" class="position-abs custom-circle" />
 				      		</a>
 				    	</li>
 				  	</ul>
@@ -254,7 +240,7 @@
 
   	<div class="parallax-container height-vh" id="idnoticias">
     	
-    	<div class="container-fluid margin-top-all-exec">
+    	<div class="container-fluid margin-top-all-exec-ex">
     		<div class="row max-altura height-up">
 	    		<div class="col s4 max-altura padding-left padding-right">
 	    			<div class="row">
@@ -289,21 +275,21 @@
 				<div class="col s4 padding-right">
 					<div class="fondo-noticia">
 						<a href="#modal4" id="modal-4" class="modal-trigger">
-							<img src="src/image/icon-noticia/image3.jpg" height="100%" width="100%">
+							<img src="src/image/icon-noticia/image3.jpg" width="100%">
 						</a>
 					</div>
 				</div>
 				<div class="col s4 padding-right">
 					<div class="fondo-noticia">
 						<a href="#modal5" id="modal-5" class="modal-trigger">
-							<img src="src/image/icon-noticia/image2.jpg" height="100%" width="100%">
+							<img src="src/image/icon-noticia/image2.jpg" width="100%">
 						</a>
 					</div>
 				</div>
 				<div class="col s4 padding-right">
 					<div class="fondo-noticia">
 						<a href="#modal6" id="modal-6" class="modal-trigger">
-							<img src="src/image/icon-noticia/image6.jpg" height="100%" width="100%">
+							<img src="src/image/icon-noticia/image6.jpg" width="100%">
 						</a>
 					</div>
 				</div>
@@ -314,18 +300,17 @@
 
   	<div id="modal1" class="modal" >
 	    <div class="modal-content width-full">
-		    <div class="position-absolute">
-		  		<a href="#!" class="modal-action modal-close btn-salir-modal">X</a>
+		    <div class="position-absolute background-close align-vertical-horizontal">
+		  		<a href="#!" class="modal-action modal-close btn-salir-modal design-btn">X</a>
 		  	</div>
-			<div class="row align-vertical heigth-full margin-bottom">
+			<div class="row align-vertical-horizontal heigth-full margin-bottom">
 				<div class="col s5">
-
 					<div class="row">
 						<div class="col s12">
 							<img src="src/image/icon-noticia/image1.jpg" class="width-full" />
 						</div>
 						<div class="col s12 align-center width-full">
-							<h6><strong id="idtitle-modal">SANTA CRUZ CELEBRA EL DIA DE LOS PUEBLOS INDIGENAS</strong></h6>
+							<h6 class="center-text"><strong id="idtitle-modal">SANTA CRUZ CELEBRA EL DIA DE LOS PUEBLOS INDIGENAS</strong></h6>
 						</div>
 					</div>
 				</div>
@@ -346,63 +331,12 @@
 	    </div>
 	</div>
 
-	<div id="modal2" class="modal">
-	    <div class="modal-content">
-			<h4>Modal Header Two</h4>
-	      	<p>A bunch of text</p>
-	    </div>
-	    <div class="modal-footer">
-	      	<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-	    </div>
-	</div>
-
-	<div id="modal3" class="modal">
-	    <div class="modal-content">
-			<h4>Modal Header Three</h4>
-	      	<p>A bunch of text</p>
-	    </div>
-	    <div class="modal-footer">
-	      	<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-	    </div>
-	</div>
-
-
-	<div id="modal4" class="modal">
-	    <div class="modal-content">
-			<h4>Modal Header Four</h4>
-	      	<p>A bunch of text</p>
-	    </div>
-	    <div class="modal-footer">
-	      	<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-	    </div>
-	</div>
-
-	<div id="modal5" class="modal">
-	    <div class="modal-content">
-			<h4>Modal Header Five</h4>
-	      	<p>A bunch of text</p>
-	    </div>
-	    <div class="modal-footer">
-	      	<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-	    </div>
-	</div>
-
-	<div id="modal6" class="modal">
-		<div class="modal-content">
-			<h4>Model Header Six</h4>
-			<p>A bunch of text</p>
-		</div>
-		<div class="modal-footer">
-			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-		</div>
-	</div>
-
   	<div class="parallax-container height-vh background-somos" id="idcontacto">
-    	<div class="row align-vertical-horizontal margin-top-all-exec">
-    		<div class="col s5 l7 width-full align-vertical-horizontal">
-    			<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d2686.4393015116693!2d-63.18221908053244!3d-17.78234714382474!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x0%3A0x37ace253ab97ec04!2sGobierno+Municipal+de+Santa+Cruz+de+la+Sierra!3m2!1d-17.7822702!2d-63.181950199999996!5e0!3m2!1sen!2sbo!4v1471529867605" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    	<div class="row margin-top-all-exec align-vertical-horizontal">
+    		<div class="col s6 l7 width-full align-vertical-horizontal">
+    			<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d2686.4393015116693!2d-63.18221908053244!3d-17.78234714382474!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x0%3A0x37ace253ab97ec04!2sGobierno+Municipal+de+Santa+Cruz+de+la+Sierra!3m2!1d-17.7822702!2d-63.181950199999996!5e0!3m2!1sen!2sbo!4v1471529867605" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     		</div>
-    		<div class="col s7 l5">
+    		<div class="col s6 l5 align-vertical-horizontal">
     			<div class="row">
     				<div class="col s12">
     					<h5>Contactanos</h5>
@@ -440,22 +374,22 @@
     				<div class="row">
     					<div class="col s4"></div>
     					<div class="col s4 center-align">
-    						<a class="waves-effect waves-light btn">Enviar</a>
+    						<a class="waves-effect waves-light btn margin-top-btn">Enviar</a>
     					</div>
     					<div class="col s4"></div>
     				</div>
-    				
     			</div>
     		</div>
     	</div>	
   	</div>
       
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="src/js/gifplayer.js"></script>
 	<script type="text/javascript" src="src/js/gif-player.js"></script>
 	<script type="text/javascript" src="src/js/rubbable.js"></script>
 	<script type="text/javascript" src="src/js/materialize.min.js"></script>
 	<script type="text/javascript" src="src/js/circleMenu.js"></script>
 	<script type="text/javascript" src="src/js/app.js"></script>
+	<script type="text/javascript" src="src/js/menu.js"></script>
 </body>
 </html>

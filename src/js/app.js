@@ -103,7 +103,7 @@ $(document).ready(function(){
 	}
 
 	$('#iddatahub').click(function() {
-		var changefondo = `<iframe class="iframe-map" 
+		var changefondo = `<iframe class="iframe-map" allowfullscreen
 								src="http://159.203.182.38/visualizadorV2/" 
 								></iframe>`
 

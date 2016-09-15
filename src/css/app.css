@@ -21,11 +21,7 @@
 }
 
 .margin-boton-search {
-	margin-top: 1em;
-}
-
-.padding-top-nav {
-	padding-top: 1em;
+	margin-top: 1em !important;
 }
 
 .padding-remove {
@@ -75,7 +71,7 @@
 
 .option {
 	color: #4ACA74 !important;
-	font-weight: 700;
+	font-weight: 700 !important;
 }
 
 .option:hover {
@@ -129,11 +125,11 @@
 }
 
 .margin-top-menu-1 {
-	margin-top: 10em;
+	margin-top: 12em;
 }
 
 .margin-top-menu-2 {
-	margin-top: 5em;
+	margin-top: 6em;
 }
 
 .margin-top-menu-3 {
@@ -280,6 +276,10 @@ textarea {
 	margin-top: 30vh !important;
 }
 
+.margin-top-all-ex {
+	margin-top: 30vh !important;
+}
+
 .margin-top-all-exec {
 	margin-top: 25vh !important;
 }
@@ -337,12 +337,12 @@ textarea {
 }
 
 .tamano-icons-estadistica {
-	width: 6em;
+	width: 3em;
 	padding: 5px;
 }
 
 .tamano-logo-gobernacion {
-	width: 20em;
+	width: 10em;
 }
 
 .padding-p {
@@ -433,3 +433,54 @@ textarea {
 .center-text {
 	text-align: center;
 }
+
+.width-option-menu {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.hover-option:hover {
+	background-color: none !important;
+}
+
+.hover-option a:hover {
+	background-color: none !important;
+}
+
+
+@media only screen and (max-width : 480px) { 
+	.margin-top-menu-1 {
+		margin-top: 0;
+	}
+
+	.margin-top-menu-2 {
+		margin-top: 0;
+	}
+
+	.margin-top-menu-3 {
+		margin-top: 0;
+	}
+}
+
+.padding-top-nav {
+	padding-top: 1em;
+}
+
+.altura-menu-container {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.padding-left-em {
+	padding-left: 3em !important;
+}
+
+.padding-right-em {
+	padding-right: 3em !important;
+}
+
+/*.black-text {
+	font-family: 
+}*/

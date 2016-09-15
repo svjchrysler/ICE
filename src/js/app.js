@@ -16,13 +16,24 @@ rub.load()*/
 
 // $('img').removeData()
 
+
+// $('#img-gif').removeAttr('src', '');
+// $('#img-gif').attr('src', 'src/image/logoweb.gif');
+
 // setTimeout(function() {
 // 	$('#loading').addClass('hide')
 // }, 6500)
 
 $(document).ready(function(){
 
+
+	redimecionar()
+
 	$(window).resize(function() {
+		redimecionar()		
+	})
+
+	function redimecionar() {
 		if ($(window).width() < 620 || $(document).width() < 620) {
 			$('#idmenu').removeClass('center-menu')	
 		}
@@ -30,8 +41,7 @@ $(document).ready(function(){
 		if($(window).width() > 620 || $(document).width() > 620) {
 			$('#idmenu').addClass('center-menu')
 		}
-		
-	})
+	}
 
 	$('.parallax').parallax();
 
@@ -304,8 +314,15 @@ $(document).ready(function(){
 
 	});
 
-	$('#option-1').click(function() {
+	$('#option-1').mouseout(function() {
+		opacidadMenuOne()
+	})
 
+	$('#option-1').mouseover(function() {
+		opacidadMenuOne()
+	})
+
+	function opacidadMenuOne() {
 		if (!$('#content-option-2').hasClass('opacity')) {
 
 			$('#content-option-2').addClass('opacity')
@@ -321,10 +338,17 @@ $(document).ready(function(){
 			$('#content-option-5').removeClass('opacity')
 
 		}
+	}
+
+	$('#option-2').mouseover(function() {
+		opacidadMenuTwo()
 	})
 
-	$('#option-2').click(function() {
-		
+	$('#option-2').mouseout(function() {
+		opacidadMenuTwo()
+	})
+
+	function opacidadMenuTwo(){
 		if (!$('#content-option-1').hasClass('opacity')) {
 
 			$('#content-option-1').addClass('opacity')
@@ -340,10 +364,18 @@ $(document).ready(function(){
 			$('#content-option-5').removeClass('opacity')
 
 		}
+	}
+
+
+	$('#option-3').mouseover(function() {
+		menuOpacidadThree()
 	})
 
-	$('#option-3').click(function() {
+	$('#option-3').mouseout(function() {
+		menuOpacidadThree()
+	})
 
+	function menuOpacidadThree() {
 		if (!$('#content-option-1').hasClass('opacity')) {
 
 			$('#content-option-1').addClass('opacity')
@@ -357,11 +389,18 @@ $(document).ready(function(){
 			$('#content-option-2').removeClass('opacity')
 			$('#content-option-4').removeClass('opacity')
 			$('#content-option-5').removeClass('opacity')
-
 		}
+	}
+
+	$('#option-4').mouseout(function() {
+		menuOpacidadFour()
 	})
 
-	$('#option-4').click(function() {
+	$('#option-4').mouseover(function() {
+		menuOpacidadFour()
+	})
+
+	function menuOpacidadFour() {
 		if (!$('#content-option-1').hasClass('opacity')) {
 
 			$('#content-option-1').addClass('opacity')
@@ -377,25 +416,32 @@ $(document).ready(function(){
 			$('#content-option-5').removeClass('opacity')
 
 		}
+	}
+
+
+	$('#option-5').mouseover(function() {
+		menuOpacidadFive()
 	})
 
-	$('#option-5').click(function() {
+	$('#option-5').mouseout(function() {
+		menuOpacidadFive()
+	})
+
+	function menuOpacidadFive() {
 		if (!$('#content-option-1').hasClass('opacity')) {
 
 			$('#content-option-1').addClass('opacity')
 			$('#content-option-3').addClass('opacity')
 			$('#content-option-4').addClass('opacity')
 			$('#content-option-2').addClass('opacity')
-
 		} else {
-
 			$('#content-option-1').removeClass('opacity')
 			$('#content-option-3').removeClass('opacity')
 			$('#content-option-4').removeClass('opacity')
 			$('#content-option-2').removeClass('opacity')
 
 		}
-	})
+	}
 
 	$('#modal-1').click(function() {
 		$('#modal1').openModal()

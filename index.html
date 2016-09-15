@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv='cache-control' content='no-cache'>
 		<meta http-equiv='expires' content='0'>
-		<meta http-equiv='pragma' content='no-cache'>
+		<meta http-equiv='Pragma' content='no-cache'>
 		<title>ICE</title>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="src/css/materialize.min.css">
@@ -15,56 +15,68 @@
 <body class="loading-inicio">
 	<div class="container-fluid position-relative background-color-nav altura">
 		<div class="position-absolute background-color-nav">
-			<div class="row margin-botton padding-top-nav background-color-nav hide-on-small-only">
+			<div class="row margin-botton background-color-nav hide-on-small-only">
 				<div class="col m7 l6">
-					<div class="row margin-botton">
-						<div class="col s8 m5 l3">
+					<div class="row margin-botton align-vertical-horizontal">
+						<div class="col s8 m5 l4">
 							<a href="./">
 								<img src="src/image/logoice.png" class="tamano-image responsive-img">	
 							</a>		
 						</div>
-						<div class="col m5 l3 hide-on-small-only">
+						<div class="col m5 l4 hide-on-small-only">
 							<a href="http://www.santacruz.gob.bo/">
 								<img src="src/image/logogobernacion.png" class="tamano-imagen responsive-img"x>	
 							</a>
 						</div>
-						<div class="col s4 m2 l6"></div>
+						<div class="col s4 m2 l4"></div>
 					</div>
 				</div>
-				<div class="col m5 l6">
+				<div class="col m5 l6 padding-top-nav margin-boton-search">
 					<div class="row margin-botton">
-						<div class="col m7 l9 margin-search">
+						<div class="col m8 l9 margin-boton-search">
 							<input type="search" placeholder="Buscar Algo?">
 						</div>
-						<div class="col m3 l2 margin-boton-search">
+						<div class="col m2 l2 margin-boton-search">
 							<button class="btn">
 								<i class="material-icons">search</i>
 							</button>
 						</div>
-						<div class="col m2 l1 right-align margin-top-redes">
+						<div class="col m2 l1">
 							<a href="#"><img src="src/image/facebook-logo.svg" width="100%"></a><br>
 							<a href="#"><img src="src/image/twitter-logo.svg" width="100%"></a>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<nav class="clearfix"> 
-				<ul class="clearfix center-menu" id="idmenu">
-					<li ><a class="option-1 option-active" href="#" id="btnsomos">Quienes somos?</a></li>
-					<li ><a class="option-2 option" href="#" id="btndatahub">Data HUB</a></li>
-					<li ><a class="option-3 option" href="#" id="btnestudios">Estadisticas</a></li>
-					<li ><a class="option-4 option" href="#" id="btnboletin">Noticias / Boletin</a></li>
-					<li ><a class="option-5 option" href="#" id="btncontacto">Contacto</a></li>
-				</ul>
-				<a href="#" class="color-text-menu" id="pull">ICE</a>
-			</nav>
+			<div class="container-fluid altura-menu-container">
+				<div class="row margin-botton">
+					<div class="col s12 padding-remove">
+						<nav class="clearfix"> 
+							<ul class="clearfix center-menu tamano-content-menu" id="idmenu">
+								<!-- <li class="hide-on-large-only hide-on-med-only hover-option show-on-small width-option-menu align-vertical-horizontal">
+									<a href="#!">
+										<img src="src/image/logoice.png" width="40%">
+									</a>
+								</li> -->
+								<li ><a class="option-1 option-active padding-remove" href="#!" id="btnsomos">Quienes somos?</a></li>
+								<li ><a class="option-2 option padding-remove" href="#!" id="btndatahub">Data HUB</a></li>
+								<li ><a class="option-3 option padding-remove" href="#!" id="btnestudios">Estadisticas</a></li>
+								<li ><a class="option-4 option padding-remove" href="#!" id="btnboletin">Noticias / Boletin</a></li>
+								<li ><a class="option-5 option padding-remove" href="#!" id="btncontacto">Contacto</a></li>
+							</ul>
+							<a href="#" class="color-text-menu" id="pull">ICE</a>
+						</nav>			
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 
-	<!-- <div id="loading" class="gif-player container-fluid align-vertical-horizontal position-absolute width-full height-vh" style="z-index:2030; left:0; top:0; background-color: rgba(245, 245, 245, 1);">
-		<img id="img-gif" src="src/image/logoweb.gif" data-mode="gif" data-gif="src/image/logoweb.gif" />
-	</div> -->
+<!-- 	<div id="loading" class="gif-player container-fluid align-vertical-horizontal position-absolute width-full height-vh" style="z-index:2030; left:0; top:0; background-color: rgba(245, 245, 245, 1);">
+		<img id="img-gif" />
+	</div>
+ -->
 
 	<div class="parallax-container height-vh align-vertical-horizontal background-somos" id="idsomos">
 		<div class="row">
@@ -82,7 +94,7 @@
 
 	<div class="parallax-container height-vh align-vertical-horizontal" id="iddatahub">
     	<div class="parallax margin-top-all-exec-ex">
-			<img id="img-datahub" src="src/image/datahub.png" />
+			<img id="img-datahub" class="responsive-img" src="src/image/datahub.png" />
 		</div>
   	</div>
 
@@ -94,11 +106,11 @@
 
   	<div class="parallax-container height-vh align-vertical-horizontal background-somos" id="idestudios">
 
-    	<div class="row margin-top-all-exec width-full custom-box">
+    	<div id="content-option" class="row width-full custom-box">
 
-    		<div class="col s1"></div>
+    		<div class="col m1 l1 hide-on-small-only"></div>
 
-    		<div class="col s2 margin-top-menu-1" id="content-option-1">
+    		<div class="col s12 m2 l2 margin-top-menu-1" id="content-option-1">
     			<div class="c-circle-menu js-menu-4 align-circle">
 					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp" id="option-1" >
 						<img src="src/image/icons/agricultura.png" class="position-abs custom-circle">
@@ -124,7 +136,7 @@
 				</div>
     		</div>
 
-    		<div class="col s2 margin-top-menu-2" id="content-option-2">
+    		<div class="col s12 m2 l2 margin-top-menu-2" id="content-option-2">
 				<div class="c-circle-menu js-menu-3 align-circle">
 					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp" id="option-2" >
 						<img src="src/image/icons/exportacion.png" class="position-abs custom-circle">
@@ -150,7 +162,7 @@
 				</div>
     		</div>
 
-    		<div class="col s2 margin-top-menu-3" id="content-option-3">
+    		<div class="col s12 m2 l2 margin-top-menu-3" id="content-option-3">
 				<div class="c-circle-menu js-menu-2 align-circle">
 					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp"  id="option-3" >
 						<img src="src/image/icons/people.png" class="position-abs custom-circle">
@@ -176,7 +188,7 @@
 				</div>
     		</div>
 
-    		<div class="col s2 margin-top-menu-2" id="content-option-4">
+    		<div class="col s12 m2 l2 margin-top-menu-2" id="content-option-4">
 				<div class="c-circle-menu js-menu-1 align-circle">
 					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp" id="option-4" >
 						<img src="src/image/icons/ganaderia.png" class="position-abs custom-circle">
@@ -202,7 +214,7 @@
 				</div>
     		</div>
 
-    		<div class="col s2 margin-top-menu-1" id="content-option-5">
+    		<div class="col s12 m2 l2 margin-top-menu-1" id="content-option-5">
 				<div class="c-circle-menu js-menu align-circle">
 					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp" id="option-5">
 						<img src="src/image/icons/industria.png" class="position-abs custom-circle">
@@ -228,7 +240,7 @@
 				</div>
     		</div>
 
-    		<div class="col s1"></div>
+    		<div class="col m1 l1 hide-on-small-only"></div>
 						
     	</div>
   	</div>
@@ -335,8 +347,8 @@
 
   	<div class="parallax-container height-vh background-somos" id="idcontacto">
     	<div class="row margin-top-all-exec">
-    		<div class="col s12 m6 l7 width-full align-vertical-horizontal">
-    			<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d2686.4393015116693!2d-63.18221908053244!3d-17.78234714382474!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x0%3A0x37ace253ab97ec04!2sGobierno+Municipal+de+Santa+Cruz+de+la+Sierra!3m2!1d-17.7822702!2d-63.181950199999996!5e0!3m2!1sen!2sbo!4v1471529867605" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    		<div class="col s12 m6 l7 width-full margin-boton-search align-vertical-horizontal">
+    			<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d2686.4393015116693!2d-63.18221908053244!3d-17.78234714382474!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x0%3A0x37ace253ab97ec04!2sGobierno+Municipal+de+Santa+Cruz+de+la+Sierra!3m2!1d-17.7822702!2d-63.181950199999996!5e0!3m2!1sen!2sbo!4v1471529867605" width="90%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
     		</div>
     		<div class="col s12 m6 l5 align-vertical-horizontal">
     			<div class="row">

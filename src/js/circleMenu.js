@@ -18,7 +18,12 @@
     };
 
     function init() {
-      $menuToggle.addEventListener('click', function(e) {
+      $menuToggle.addEventListener('mouseover', function(e) {
+        e.preventDefault();
+        toggleMenu();
+      });
+
+       $menuToggle.addEventListener('mouseout', function(e) {
         e.preventDefault();
         toggleMenu();
       });

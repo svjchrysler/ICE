@@ -322,16 +322,32 @@ $(document).ready(function(){
 		opacidadMenuOne()
 	})
 
+	$('#idsomos').mouseout(function(e) {
+		console.log(e)
+	})
+
+	// $('#sub-1-option-1').mouseout(function() {
+	// 	opacidadMenuOne()
+	// })
+
+	// $('#sub-2-option-1').mouseout(function() {
+	// 	opacidadMenuOne()
+	// })
+
+	// $('#sub-3-option-1').mouseout(function() {
+	// 	opacidadMenuOne()
+	// })
+
+	
+
 	function opacidadMenuOne() {
 		if (!$('#content-option-2').hasClass('opacity')) {
-
 			$('#content-option-2').addClass('opacity')
 			$('#content-option-3').addClass('opacity')
 			$('#content-option-4').addClass('opacity')
 			$('#content-option-5').addClass('opacity')
 
 		} else {
-
 			$('#content-option-2').removeClass('opacity')
 			$('#content-option-3').removeClass('opacity')
 			$('#content-option-4').removeClass('opacity')
@@ -362,7 +378,6 @@ $(document).ready(function(){
 			$('#content-option-3').removeClass('opacity')
 			$('#content-option-4').removeClass('opacity')
 			$('#content-option-5').removeClass('opacity')
-
 		}
 	}
 
@@ -377,14 +392,11 @@ $(document).ready(function(){
 
 	function menuOpacidadThree() {
 		if (!$('#content-option-1').hasClass('opacity')) {
-
 			$('#content-option-1').addClass('opacity')
 			$('#content-option-2').addClass('opacity')
 			$('#content-option-4').addClass('opacity')
 			$('#content-option-5').addClass('opacity')
-
 		} else {
-
 			$('#content-option-1').removeClass('opacity')
 			$('#content-option-2').removeClass('opacity')
 			$('#content-option-4').removeClass('opacity')
@@ -402,19 +414,15 @@ $(document).ready(function(){
 
 	function menuOpacidadFour() {
 		if (!$('#content-option-1').hasClass('opacity')) {
-
 			$('#content-option-1').addClass('opacity')
 			$('#content-option-3').addClass('opacity')
 			$('#content-option-2').addClass('opacity')
 			$('#content-option-5').addClass('opacity')
-
 		} else {
-
 			$('#content-option-1').removeClass('opacity')
 			$('#content-option-3').removeClass('opacity')
 			$('#content-option-2').removeClass('opacity')
 			$('#content-option-5').removeClass('opacity')
-
 		}
 	}
 
@@ -429,7 +437,6 @@ $(document).ready(function(){
 
 	function menuOpacidadFive() {
 		if (!$('#content-option-1').hasClass('opacity')) {
-
 			$('#content-option-1').addClass('opacity')
 			$('#content-option-3').addClass('opacity')
 			$('#content-option-4').addClass('opacity')
@@ -439,7 +446,6 @@ $(document).ready(function(){
 			$('#content-option-3').removeClass('opacity')
 			$('#content-option-4').removeClass('opacity')
 			$('#content-option-2').removeClass('opacity')
-
 		}
 	}
 

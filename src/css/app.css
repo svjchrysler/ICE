@@ -481,6 +481,10 @@ textarea {
 	padding-right: 3em !important;
 }
 
+.elevacion-option {
+	z-index: 2020 !important;
+}
+
 /*.black-text {
 	font-family: 
 }*/

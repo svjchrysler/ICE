@@ -11,11 +11,12 @@
 		<link rel="stylesheet" type="text/css" href="src/css/app.css">
 		<link rel="stylesheet" type="text/css" href="src/css/circleMenu.css">
 		<link rel="stylesheet" type="text/css" href="src/css/menu.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	</head>
 <body class="loading-inicio">
 	<div class="container-fluid position-relative background-color-nav altura">
 		<div class="position-absolute background-color-nav">
-			<div class="row margin-botton background-color-nav hide-on-small-only">
+			<div class="row margin-botton background-color-nav hide-on-small-only" id="hide-show">
 				<div class="col m7 l6">
 					<div class="row margin-botton align-vertical-horizontal">
 						<div class="col s8 m5 l4">
@@ -73,10 +74,10 @@
 		</div>
 	</div>
 
-	<!-- 	<div id="loading" class="gif-player container-fluid align-vertical-horizontal position-absolute width-full height-vh" style="z-index:2030; left:0; top:0; background-color: rgba(245, 245, 245, 1);">
-			<img id="img-gif" />
-		</div>
-	 -->
+	<div id="loading" class="gif-player container-fluid align-vertical-horizontal position-absolute width-full height-vh" style="z-index:2030; left:0; top:0; background-color: rgba(245, 245, 245, 1);">
+		<img id="img-gif" />
+	</div>
+	
 
 	<div class="parallax-container height-vh align-vertical-horizontal background-somos" id="idsomos">
 		<div class="row">
@@ -93,7 +94,7 @@
 	</div>
 
 	<div class="parallax-container height-vh align-vertical-horizontal" id="iddatahub">
-    	<div class="parallax margin-top-all-exec-ex">
+    	<div class="parallax">
 			<img id="img-datahub" class="responsive-img" src="src/image/datahub.png" />
 		</div>
   	</div>
@@ -165,7 +166,7 @@
 
     		<div class="col s12 m2 l2 margin-top-menu-3" id="content-option-3">
 				<div class="c-circle-menu js-menu-2 align-circle">
-					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp elevacion-option"  id="option-3" >
+					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp elevacion-option" id="option-3">
 						<img src="src/image/icons/people.png" class="position-abs custom-circle">
 					</div>
 				  	<ul class="c-circle-menu__items">
@@ -245,24 +246,25 @@
     	</div>
   	</div>
 
-  	<div class="row width-full remove-option position-relative">
+  	<div class="row width-full remove-option position-relative margin-botton">
 		<div class="col s12 width-full center-align position-abs align-more">
 			<a href="#!" id="more-data" class="black-text">Mas Datos</a>
 		</div>
 	</div>
 
-
-  	<div class="parallax-container height-vh" id="idnoticias">
-    	
-    	<div class="container-fluid margin-top-all-exec-ex">
-    		<div class="row max-altura height-up">
+  	<div class="parallax-container height-vh aling-vertical-horizontal padding-top-noticia" id="idnoticias">
+    	<div class="container-fluid">
+    		<div class="row max-altura">
 	    		<div class="col s4 max-altura padding-left padding-right">
 	    			<div class="row">
 	    				<div class="col s12 max-altura-col padding-right">
-	    					<div class="fondo-noticia">
+	    					<div class="fondo-noticia position-relative">
 	    						<a href="#modal1" class="modal-trigger" id="modal-1">
-	    							<img src="src/image/icon-noticia/image1.jpg" width="100%" >	
-	    						</a>    						
+	    							<img src="src/image/icon-noticia/image1.jpg" class="responsive-img" width="100%" >
+	    						</a>
+	    						<span class="position-abs text-style-noticia">
+	    							Lorem Ipsum 1
+	    						</span>
 	    					</div>
 	    				</div>
 	    			</div>
@@ -270,58 +272,72 @@
 	    				<div class="col s12 max-altura-col padding-right">
 	    					<div class="fondo-noticia position-relative">
 	    						<a href="#modal2" id="modal-2" class="modal-trigger">
-	    							<img src="src/image/icon-noticia/image5.jpg" width="100%">
+	    							<img src="src/image/icon-noticia/image5.jpg" class="responsive-img" width="100%">
 	    						</a>
+	    						<span class="position-abs text-style-noticia">
+	    							Lorem Ipsum 1
+	    						</span>
 	    					</div>
 	    				</div>
 	    			</div>
 	    		</div>
 	    		<div class="col s8 max-altura padding-right">
-	    			<div class="fondo-noticia">
+	    			<div class="fondo-noticia position-relative">
 						<a href="#modal3" id="modal-3" class="modal-trigger">
-							<img src="src/image/icon-noticia/image4.png" width="100%">
+							<img src="src/image/icon-noticia/image4.png" class="responsive-img" width="100%">
 						</a>
+						<span class="position-abs text-style-noticia-exec">
+							Lorem Ipsum 1
+						</span>
 					</div>
 	    		</div>
 			</div>
 
-			<div class="row max-altura-bottom height-down">
+			<div class="row max-altura-bottom margin-botton">
 				<div class="col s4 padding-right">
-					<div class="fondo-noticia">
+					<div class="fondo-noticia position-relative">
 						<a href="#modal4" id="modal-4" class="modal-trigger">
-							<img src="src/image/icon-noticia/image3.jpg" width="100%">
+							<img src="src/image/icon-noticia/image3.jpg" class="responsive-img" width="100%">
 						</a>
+						<span class="position-abs text-style-noticia">
+							Lorem Ipsum 1
+						</span>
 					</div>
 				</div>
 				<div class="col s4 padding-right">
-					<div class="fondo-noticia">
+					<div class="fondo-noticia position-relative">
 						<a href="#modal5" id="modal-5" class="modal-trigger">
-							<img src="src/image/icon-noticia/image2.jpg" width="100%">
+							<img src="src/image/icon-noticia/image2.jpg" class="responsive-img" width="100%">
 						</a>
+						<span class="position-abs text-style-noticia">
+							Lorem Ipsum 1
+						</span>
 					</div>
 				</div>
 				<div class="col s4 padding-right">
-					<div class="fondo-noticia">
+					<div class="fondo-noticia position-relative">
 						<a href="#modal6" id="modal-6" class="modal-trigger">
-							<img src="src/image/icon-noticia/image6.jpg" width="100%">
+							<img src="src/image/icon-noticia/image6.jpg" class="responsive-img" width="100%">
 						</a>
+						<span class="position-abs text-style-noticia">
+							Lorem Ipsum 1
+						</span>
 					</div>
 				</div>
 			</div>
-
     	</div>    	
   	</div>
 
   	<div id="modal1" class="modal" >
 	    <div class="modal-content width-full">
 		    <div class="position-absolute background-close align-vertical-horizontal">
-		  		<a href="#!" class="modal-action modal-close btn-salir-modal design-btn">X</a>
+		  		<a href="#!" class="modal-action modal-close design-btn"><i class="material-icons">clear</i></a>
 		  	</div>
 			<div class="row align-vertical-horizontal heigth-full margin-bottom">
 				<div class="col s5">
 					<div class="row">
 						<div class="col s12">
-							<img src="src/image/icon-noticia/image1.jpg" class="width-full" />
+							<img src="src/image/icon-noticia/image1.jpg" class="width-full responsive-img" />
 						</div>
 						<div class="col s12 align-center width-full">
 							<h6 class="center-text"><strong id="idtitle-modal">SANTA CRUZ CELEBRA EL DIA DE LOS PUEBLOS INDIGENAS</strong></h6>
@@ -345,15 +361,15 @@
 	    </div>
 	</div>
 
-  	<div class="parallax-container height-vh background-somos" id="idcontacto">
-    	<div class="row margin-top-all-exec">
-    		<div class="col s12 m6 l7 width-full margin-boton-search align-vertical-horizontal">
+  	<div class="parallax-container height-vh background-somos padding-contacto" id="idcontacto">
+    	<div class="row margin-top margin-botton">
+    		<div class="col s12 m6 l7 width-full height-vh align-vertical-horizontal">
     			<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d2686.4393015116693!2d-63.18221908053244!3d-17.78234714382474!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x0%3A0x37ace253ab97ec04!2sGobierno+Municipal+de+Santa+Cruz+de+la+Sierra!3m2!1d-17.7822702!2d-63.181950199999996!5e0!3m2!1sen!2sbo!4v1471529867605" width="90%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
     		</div>
-    		<div class="col s12 m6 l5 align-vertical-horizontal">
-    			<div class="row">
+    		<div class="col s12 m6 l5 height-vh align-vertical-horizontal">
+    			<div class="row margin-botton">
     				<div class="col s12">
-    					<h5>Contactanos</h5>
+    					<h5 class="h5-bold">Contáctanos</h5>
     				</div>
     				<div class="input-field col s12">
           				<input placeholder="Nombre y Apellido" id="first_name" type="text" class="validate">
@@ -385,7 +401,7 @@
     					<input type="checkbox" id="test5" />
       					<label for="test5">Desea recibir los boletines trimestrelas y noticias sobre el ICE</label>
     				</div>
-    				<div class="row">
+    				<div class="row margin-top margin-botton">
     					<div class="col s4"></div>
     					<div class="col s4 center-align">
     						<a class="waves-effect waves-light btn margin-top-btn">Enviar</a>
@@ -396,6 +412,8 @@
     		</div>
     	</div>	
   	</div>
+
+  	<i class="ir-arriba material-icons">keyboard_arrow_up</i>
       
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="src/js/materialize.min.js"></script>

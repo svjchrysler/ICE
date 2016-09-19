@@ -51,7 +51,7 @@
 }
 
 .height-vh {
-	height: 100vh;
+	height: 100vh !important;
 }
 
 .align-vertical-horizontal {
@@ -137,22 +137,22 @@
 }
 
 .fondo-noticia {
-	width: 100%;
+	width: 100% !important;
 	background-color: #000;
 }
 
 .max-altura {
-	max-height: 22em;
+	max-height: 65vh !important;
 	overflow: hidden;
 }
 
 .max-altura-col {
-	max-height: 11em;
+	max-height: 65vh !important; 
 	overflow: hidden;	
 }
 
 .max-altura-bottom {
-	max-height: 15em;
+	max-height: 35vh !important;
 	overflow: hidden;
 }
 
@@ -198,7 +198,7 @@ textarea {
 
 .iframe-map {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	border: none;
 	display: block;
 }
@@ -228,11 +228,11 @@ textarea {
 }
 
 .height-up {
-	max-height: 70vh;
+	max-height: 100vh;
 }
 
 .height-down {
-	max-height: 30vh;
+	max-height: 35vh;
 }
 
 .padding-align {
@@ -240,7 +240,7 @@ textarea {
 }
 
 .height-up-all {
-	max-height: 50vh !important;
+	max-height: 60vh !important;
 }
 
 .height-down-all {
@@ -248,7 +248,10 @@ textarea {
 }
 
 .modal {
-	margin-top: 7em;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+	margin-top: 5em;
 	width: 90%;
 }
 
@@ -265,7 +268,7 @@ textarea {
 }
 
 .margin-top {
-	margin-top: 0;
+	margin-top: 0 !important;
 }
 
 .margin-right {
@@ -286,11 +289,6 @@ textarea {
 
 .margin-top-all-exec-ex {
 	margin-top: 22vh !important;
-}
-
-.btn-salir-modal {
-	color: #000 !important;
-	font-size: 2em; right:0 !important;
 }
 
 #idnoticias .parallax {
@@ -332,7 +330,7 @@ textarea {
 }
 
 .height-banner {
-	max-height: 15em !important;
+	max-height: 25em !important;
 	overflow: hidden;
 }
 
@@ -350,7 +348,7 @@ textarea {
 }
 
 .altura-estadistica {
-	height: 80vh !important;
+	height: 100vh !important;
 	overflow: scroll !important;
 	overflow-x: hidden !important;
 	padding: 0 !important;
@@ -428,6 +426,7 @@ textarea {
 .design-btn {
 	color: #FFF !important;	
 	font-weight: 700 !important;
+	font-size: 2em; right:0 !important;
 }
 
 .center-text {
@@ -485,6 +484,63 @@ textarea {
 	z-index: 2020 !important;
 }
 
-/*.black-text {
-	font-family: 
-}*/
+.black-text {
+	font-family: 'Ubuntu', sans-serif;
+	color: #000;
+	font-weight: 400;
+}
+
+.ir-arriba {
+	display:none;
+	padding:10px;
+	background:#4ACA74;
+	font-size:30px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+
+.height-vh-other {
+	height: 95vh !important;
+}
+
+.margin-top-other {
+	margin-top: 15vh !important;
+}
+
+.text-style-noticia {
+	bottom:0; 
+	right:0; 
+	color:#FFF; 
+	font-weight:700; 
+	font-size:2em;
+}
+
+.text-style-noticia-exec {
+	top:0; 
+	left:0; 
+	color:#FFF; 
+	font-weight:700; 
+	font-size:2em;	
+
+}
+
+.h5-bold {
+	color: #999999 !important;
+	font-weight: 700 !important;
+}
+
+.padding-top-noticia {
+	padding-top:2em;
+}
+
+.padding-contacto {
+	padding-top: 1em !important;
+	padding-bottom: 1em !important;
+}
+
+.padding-top-estadisticas {
+	padding-top: 7em !important;
+}

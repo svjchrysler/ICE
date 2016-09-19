@@ -18,15 +18,15 @@
     };
 
     function init() {
-      $menuToggle.addEventListener('mouseover', function(e) {
+      $menuToggle.addEventListener('click', function(e) {
         e.preventDefault();
         toggleMenu();
       });
 
-       $menuToggle.addEventListener('mouseout', function(e) {
-        e.preventDefault();
-        toggleMenu();
-      });
+      // $menuToggle.addEventListener('mouseout', function(e) {
+      //   e.preventDefault();
+      //   toggleMenu();
+      // });
     }
 
     function toggleMenu() {

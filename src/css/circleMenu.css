@@ -1,12 +1,12 @@
 .c-circle-menu {
   position: relative;
   z-index: 1000;
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu {
     width: 96px;
     height: 96px;
@@ -29,9 +29,9 @@
   border: none;
   top: 0;
   left: 0;
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
   opacity: 0;
   background-color: #4ACA74;
   -webkit-transition: opacity, -webkit-transform;
@@ -44,7 +44,7 @@
           transition-timing-function: cubic-bezier(0.35, -0.59, 0.47, 0.97);
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu__item {
     width: 100px;
     height: 100px;
@@ -88,11 +88,11 @@
 .c-circle-menu.is-active .c-circle-menu__item:nth-child(1) { /* DATOS 1 */
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
-  -webkit-transform: translate(-25px, 105px);
-          transform: translate(-25px, 105px);
+  -webkit-transform: translate(-10px, 60px);
+          transform: translate(-10px, 60px);
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu.is-active .c-circle-menu__item:nth-child(1) { /* DATOS */
     -webkit-transform: translate(-25px, 105px);
             transform: translate(-25px, 105px);
@@ -102,11 +102,11 @@
 .c-circle-menu.is-active .c-circle-menu__item:nth-child(2) { /* DATOS 2 */
   -webkit-transition-delay: .2s;
           transition-delay: .2s;
-  -webkit-transform: translate(-125px, -160px);
-          transform: translate(-125px, -160px);
+  -webkit-transform: translate(-70px, 85px);
+          transform: translate(-70px, 85px);
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu.is-active .c-circle-menu__item:nth-child(2) { /* DATOS */
     -webkit-transform: translate(-125px, 160px);
             transform: translate(-125px, 160px);
@@ -116,11 +116,11 @@
 .c-circle-menu.is-active .c-circle-menu__item:nth-child(3) { /* DATOS 3 */
   -webkit-transition-delay: .3s;
           transition-delay: .3s;
-  -webkit-transform: translate(-225px, -105px);
-          transform: translate(-225px, -105px);
+  -webkit-transform: translate(-130px, 60px);
+          transform: translate(-130px, 60px);
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu.is-active .c-circle-menu__item:nth-child(3) { /* DATOS */
     -webkit-transform: translate(-225px, 105px);
             transform: translate(-225px, 105px);
@@ -134,7 +134,7 @@
           transform: translate(-56px, -134px);
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu.is-active .c-circle-menu__item:nth-child(4) {
     -webkit-transform: translate(-111px, -267px);
             transform: translate(-111px, -267px);
@@ -148,7 +148,7 @@
           transform: translate(0, -144px);
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu.is-active .c-circle-menu__item:nth-child(5) {
     -webkit-transform: translate(0, -288px);
             transform: translate(0, -288px);
@@ -167,7 +167,7 @@
   box-shadow: inset 0 0 0 2px rgba(0,0,0,0);
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu__link {
     border-radius: 48px;
   }
@@ -179,23 +179,19 @@
   height: auto;
 }
 
-.c-circle-menu__link:hover {
-  box-shadow: inset 0 0 0 2px #4ACA74;
-}
-
 .c-circle-menu__toggle {
   display: block;
   position: absolute;
   z-index: 100;
   margin: 0;
   padding: 0;
-  width: 48px;
-  height: 48px;
+  width: 80px;
+  height: 80px;
   background-color: #4ACA74;
   font: inherit;
   font-size: 0;
   text-indent: -9999px;
-  border-radius: 24px;
+  border-radius: 40px;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
   
@@ -207,7 +203,7 @@
   box-shadow: none;
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu__toggle {
     width: 150px;
     height: 150px;
@@ -232,7 +228,7 @@
   border-radius: 1px;
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu__toggle span,
   .c-circle-menu__toggle span::before,
   .c-circle-menu__toggle span::after {
@@ -249,7 +245,7 @@
   transition: background 0.3s;
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu__toggle span {
     top: 44px;
     left: 20px;
@@ -276,7 +272,7 @@
   transition-property: top, transform, -webkit-transform;
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
   .c-circle-menu__toggle span::before {
     top: -16px;
   }
@@ -290,7 +286,7 @@
   transition-property: bottom, transform, -webkit-transform;
 }
 
-@media (min-width: 480px) and (min-height: 480px) {
+@media (min-width: 480px) {
 	.c-circle-menu__toggle span::after {
 		bottom: -16px;
 	}

@@ -343,7 +343,6 @@ $(document).ready(function(){
 			$('#content-option-3').removeClass('opacity')
 			$('#content-option-4').removeClass('opacity')
 			$('#content-option-5').removeClass('opacity')
-
 		}
 	}
 

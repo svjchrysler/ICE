@@ -21,17 +21,15 @@ $(document).ready(function(){
 		}, 300);
 	});
  
-	// $(window).scroll(function(){
-		
-	// });
-
 	function redimecionar() {
 		if ($(window).width() < 620 || $(document).width() < 620) {
 			$('#idmenu').removeClass('center-menu')	
+			$('#img-datahub').attr('src', 'src/image/vertical.jpg')
 		}
 
 		if($(window).width() > 620 || $(document).width() > 620) {
 			$('#idmenu').addClass('center-menu')
+			$('#img-datahub').attr('src', 'src/image/datahub.png')
 		}
 	}
 
@@ -126,78 +124,120 @@ $(document).ready(function(){
 
 	$('#more-data').click(function() {
 
-		var template_estadistica = `<div class="parallax-container height-vh align-vertical-horizontal" id="idestudios">
-		<div class="container-fluid padding-top-estadisticas" id="slide-estadistica">
+		var template_estadistica = `<div class="parallax-container height-vh" id="idestudios">
+		<div class="container-fluid padding-top-estadisticas-option" id="slide-estadistica">
 			<div class="row altura-estadistica margin-botton">
-				<div class="col s12">
+				<div class="col s12 m12">
 					<div class="row altura-estadistica-up">
-						<div class="col s3">
-							<a href="estadistica.html"><img src="src/image/image-estadisticas/cuadrado.jpg" width="100%"></a>
+						<div class="col s12 m3 altura-estadistica-up">
+							<a href="estadistica.html">
+								<img src="src/image/image-estadisticas/cuadrado.jpg" class="responsive-img" width="100%">
+							</a>
 						</div>
-						<div class="col s2">
-							<a href="estadistica.html"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
+						<div class="col s12 m2 altura-estadistica-up">
+							<a href="estadistica.html">
+								<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+							</a>
 						</div>
-						<div class="col s5 altura-estadistica-down-total">
+						<div class="col s12 m5 altura-estadistica-up">
 							<div class="row altura-up-porcion">
-								<div class="col s7 ">
-									<a href="#!"><img src="src/image/image-estadisticas/horizontal1.jpg" width="100%"></a>
+								<div class="col s12 m7 ">
+									<a href="#!">
+										<img src="src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
+									</a>
 								</div>
-								<div class="col s5">
-									<a href="#!"><img src="src/image/image-estadisticas/featured31.jpg" width="100%"></a>
+								<div class="col s12 m5">
+									<a href="#!">
+										<img src="src/image/image-estadisticas/featured31.jpg" class="responsive-img" width="100%">
+									</a>
 								</div>
 							</div>
 							<div class="row altura-down-porcion">
-								<div class="col s5">
-									<a href="#!"><img src="src/image/image-estadisticas/featured31.jpg" width="100%"></a>
+								<div class="col s12 m5">
+									<a href="#!">
+										<img src="src/image/image-estadisticas/featured31.jpg" class="responsive-img" width="100%">
+									</a>
 								</div>
-								<div class="col s7">
-									<a href="#!"><img src="src/image/image-estadisticas/horizontal1.jpg" width="100%"></a>
+								<div class="col s12 m7">
+									<a href="#!">
+										<img src="src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
+									</a>
 								</div>
 							</div>
 						</div>
-						<div class="col s2">
-							<a href="#!"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
+						<div class="col s12 m2 altura-estadistica-up">
+							<a href="#!">
+								<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+							</a>
 						</div>
 					</div>
 
-					<div class="row">
-						<div class="col s10 altura-estadistica-down-total">
+					<div class="row altura-estadistica-up">
+						<div class="col s12 m10">
 							<div class="row altura-estadistica-middle">
-								<div class="col s3">
-									<a href="estadistica.html"><img src="src/image/image-estadisticas/featured31.jpg" width="100%"></a>
+								<div class="col s12 m12">
+									<div class="row">
+										<div class="col s12 m3">
+											<a href="estadistica.html">
+												<img src="src/image/image-estadisticas/featured31.jpg" class="responsive-img" width="100%">
+											</a>
+										</div>
+										<div class="col s12 m3">
+											<a href="#!">
+												<img src="src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
+											</a>
+										</div>
+										<div class="col s12 m3">
+											<a href="#!">
+												<img src="src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
+											</a>
+										</div>
+										<div class="col s12 m3">
+											<a href="#!">
+												<img src="src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
+											</a>
+										</div>		
+									</div>
 								</div>
-								<div class="col s3">
-									<a href="#!"><img src="src/image/image-estadisticas/horizontal1.jpg" width="100%"></a>
-								</div>
-								<div class="col s3">
-									<a href="#!"><img src="src/image/image-estadisticas/horizontal1.jpg" width="100%"></a>
-								</div>
-								<div class="col s3">
-									<a href="#!"><img src="src/image/image-estadisticas/horizontal1.jpg" width="100%"></a>
-								</div>
-							</div>
-							<div class="row altura-estadistica-middle">
-								<div class="col s2">
-									<a href="#!"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
-								</div>
-								<div class="col s3">
-									<a href="#!"><img src="src/image/image-estadisticas/cuadrado.jpg" width="100%"></a>
-								</div>
-								<div class="col s2">
-									<a href="#!"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
-								</div>
-								<div class="col s3">
-									<a href="#!"><img src="src/image/image-estadisticas/cuadrado.jpg" width="100%"></a>
-								</div>
-								<div class="col s2">
-									<a href="#!"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
+
+								<div class="col s12 m12">
+									<div class="row">
+										<div class="col s12 m2">
+											<a href="#!">
+												<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+											</a>
+										</div>
+										<div class="col s12 m3">
+											<a href="#!">
+												<img src="src/image/image-estadisticas/cuadrado.jpg" class="responsive-img" width="100%">
+											</a>
+										</div>
+										<div class="col s12 m2">
+											<a href="#!">
+												<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+											</a>
+										</div>
+										<div class="col s12 m3">
+											<a href="#!">
+												<img src="src/image/image-estadisticas/cuadrado.jpg" class="responsive-img" width="100%">
+											</a>
+										</div>
+										<div class="col s12 m2">
+											<a href="#!">
+												<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col s2 altura-estadistica-down-total">
-							<a href="#!"><img src="src/image/image-estadisticas/height-large.jpg" width="100%"></a>
+						<div class="col s12 m2 altura-estadistica-down-total">
+							<a href="#!">
+								<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+							</a>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>		

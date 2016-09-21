@@ -2,12 +2,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<title>Noticias Estadisticas</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="src/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="src/css/app.css">
 	<link rel="stylesheet" type="text/css" href="src/css/circleMenu.css">
 	<link rel="stylesheet" type="text/css" href="src/css/menu.css">
+
 </head>
 <body>
 
@@ -46,7 +48,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid altura-menu-container">
+			<div class="container-fluid altura-menu-container hide">
 				<div class="row margin-botton">
 					<div class="col s12 padding-remove">
 						<nav class="clearfix"> 
@@ -67,10 +69,17 @@
 	</div>
 
 
+	<div class="position-relative">
+		<a href="./" class="position-fixed position-align background-btn-back tamano-icon-back align-vertical-horizontal color-icon-back">
+			<i class="large material-icons color-icon-back">keyboard_arrow_left</i>
+			Atras
+		</a>
+	</div>
+
 	<div class="container-fluid position-relative">
 		<div class="row align-mp width-full">
 			<div class="col s12 align-mp height-banner">
-				<img src="src/image/datahub.png" class="width-full responsive-img filter-blur">
+				<img id="img-datahub" src="src/image/datahub.png" class="width-full responsive-img filter-blur">
 			</div>
 		</div>
 	</div>

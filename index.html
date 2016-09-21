@@ -5,6 +5,7 @@
 		<meta http-equiv='cache-control' content='no-cache'>
 		<meta http-equiv='expires' content='0'>
 		<meta http-equiv='Pragma' content='no-cache'>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<title>ICE</title>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="src/css/materialize.min.css">
@@ -43,8 +44,12 @@
 							</button>
 						</div>
 						<div class="col m2 l1">
-							<a href="#"><img src="src/image/facebook-logo.svg" width="100%"></a><br>
-							<a href="#"><img src="src/image/twitter-logo.svg" width="100%"></a>
+							<a href="#">
+								<img src="src/image/facebook-logo.svg" width="100%">
+							</a><br>
+							<a href="#">
+								<img src="src/image/twitter-logo.svg" width="100%">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -52,18 +57,23 @@
 			<div class="container-fluid altura-menu-container shadow-nav" id="nav-menu">
 				<div class="row margin-botton">
 					<div class="col s12 padding-remove">
-						<nav class="clearfix"> 
+						<nav class="clearfix">
 							<ul class="clearfix center-menu tamano-content-menu" id="idmenu">
-								<!-- <li class="hide-on-large-only hide-on-med-only hover-option show-on-small width-option-menu align-vertical-horizontal">
-									<a href="#!">
-										<img src="src/image/logoice.png" width="40%">
-									</a>
-								</li> -->
-								<li ><a class="option-1 option-active padding-remove" href="#!" id="btnsomos">Quienes somos?</a></li>
-								<li ><a class="option-2 option padding-remove" href="#!" id="btndatahub">Data HUB</a></li>
-								<li ><a class="option-3 option padding-remove" href="#!" id="btnestudios">Estadisticas</a></li>
-								<li ><a class="option-4 option padding-remove" href="#!" id="btnboletin">Noticias / Boletin</a></li>
-								<li ><a class="option-5 option padding-remove" href="#!" id="btncontacto">Contacto</a></li>
+								<li>
+									<a class="option-1 option-active padding-remove" href="#!" id="btnsomos">Quienes somos?</a>
+								</li>
+								<li>
+									<a class="option-2 option padding-remove" href="#!" id="btndatahub">Data HUB</a>
+								</li>
+								<li>
+									<a class="option-3 option padding-remove" href="#!" id="btnestudios">Estadisticas</a>
+								</li>
+								<li>
+									<a class="option-4 option padding-remove" href="#!" id="btnboletin">Noticias / Boletin</a>
+								</li>
+								<li>
+									<a class="option-5 option padding-remove" href="#!" id="btncontacto">Contacto</a>
+								</li>
 							</ul>
 							<a href="#" class="color-text-menu" id="pull">ICE</a>
 						</nav>			
@@ -89,12 +99,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col s2"></div>	
+			<div class="col s2"></div>
 		</div>
 	</div>
 
 	<div class="parallax-container height-vh align-vertical-horizontal" id="iddatahub">
-    	<div class="parallax">
+    	<div class="parallax padding-top-datahub">
 			<img id="img-datahub" class="responsive-img" width="100%" src="src/image/datahub.png" />
 		</div>
   	</div>
@@ -106,7 +116,6 @@
 	</div> -->
 
   	<div class="parallax-container height-vh align-vertical-horizontal background-somos" id="idestudios">
-
     	<div id="content-option" class="row width-full custom-box">
 
     		<div class="col m1 l1 hide-on-small-only"></div>
@@ -244,7 +253,7 @@
 
     		<div class="col m1 l1 hide-on-small-only"></div>
     	</div>
-  	</div>
+  	</div>  	
 
   	<div class="row width-full remove-option position-relative margin-botton">
 		<div class="col s12 width-full center-align position-abs align-more">
@@ -252,37 +261,37 @@
 		</div>
 	</div>
 
-  	<div class="parallax-container height-vh aling-vertical-horizontal padding-top-noticia" id="idnoticias">
-    	<div class="container-fluid height-vh">
-    		<div class="row max-altura">
-	    		<div class="col s4 max-altura padding-left padding-right">
-	    			<div class="row">
-	    				<div class="col s12 max-altura-col padding-right">
+  	<div class="parallax-container height-vh" id="idnoticias">
+    	<div class="container-fluid padding-top-noticia padding-right-noticia">
+    		<div class="row max-altura margin-bottom-noticia-clean">
+	    		<div class="col s12 m4 max-altura padding-left padding-right">
+	    			<div class="row margin-bottom-noticia-clean">
+	    				<div class="col s12 m12 max-altura-col-up padding-right">
 	    					<div class="fondo-noticia position-relative">
 	    						<a href="#modal1" class="modal-trigger" id="modal-1">
 	    							<img src="src/image/icon-noticia/image1.jpg" class="responsive-img" width="100%" >
 	    						</a>
-	    						<span class="position-abs text-style-noticia">
+	    						<span class="position-abs text-style-noticia-exec">
 	    							Lorem Ipsum 1
 	    						</span>
 	    					</div>
 	    				</div>
 	    			</div>
-	    			<div class="row">
-	    				<div class="col s12 max-altura-col padding-right">
+	    			<div class="row margin-bottom-noticia-clean">
+	    				<div class="col s12 m12 max-altura-col-down padding-right">
 	    					<div class="fondo-noticia position-relative">
 	    						<a href="#modal2" id="modal-2" class="modal-trigger">
 	    							<img src="src/image/icon-noticia/image5.jpg" class="responsive-img" width="100%">
 	    						</a>
-	    						<span class="position-abs text-style-noticia">
+	    						<span class="position-abs text-style-noticia-exec">
 	    							Lorem Ipsum 1
 	    						</span>
 	    					</div>
 	    				</div>
 	    			</div>
 	    		</div>
-	    		<div class="col s8 max-altura padding-right">
-	    			<div class="fondo-noticia position-relative">
+	    		<div class="col s12 m8 max-altura padding-right">
+	    			<div class="fondo-noticia position-relative max-altura-col-right">
 						<a href="#modal3" id="modal-3" class="modal-trigger">
 							<img src="src/image/icon-noticia/image4.png" class="responsive-img" width="100%">
 						</a>
@@ -294,32 +303,32 @@
 			</div>
 
 			<div class="row max-altura-bottom margin-botton">
-				<div class="col s4 padding-right">
+				<div class="col s12 m4 padding-right max-altura-bottom-left">
 					<div class="fondo-noticia position-relative">
 						<a href="#modal4" id="modal-4" class="modal-trigger">
 							<img src="src/image/icon-noticia/image3.jpg" class="responsive-img" width="100%">
 						</a>
-						<span class="position-abs text-style-noticia">
+						<span class="position-abs text-style-noticia-exec">
 							Lorem Ipsum 1
 						</span>
 					</div>
 				</div>
-				<div class="col s4 padding-right">
+				<div class="col s12 m4 padding-right max-altura-bottom-center">
 					<div class="fondo-noticia position-relative">
 						<a href="#modal5" id="modal-5" class="modal-trigger">
 							<img src="src/image/icon-noticia/image2.jpg" class="responsive-img" width="100%">
 						</a>
-						<span class="position-abs text-style-noticia">
+						<span class="position-abs text-style-noticia-exec">
 							Lorem Ipsum 1
 						</span>
 					</div>
 				</div>
-				<div class="col s4 padding-right">
+				<div class="col s12 m4 padding-right max-altura-bottom-right">
 					<div class="fondo-noticia position-relative">
 						<a href="#modal6" id="modal-6" class="modal-trigger">
 							<img src="src/image/icon-noticia/image6.jpg" class="responsive-img" width="100%">
 						</a>
-						<span class="position-abs text-style-noticia">
+						<span class="position-abs text-style-noticia-exec">
 							Lorem Ipsum 1
 						</span>
 					</div>
@@ -329,18 +338,22 @@
   	</div>
 
   	<div id="modal1" class="modal" >
-	    <div class="modal-content width-full">
-		    <div class="position-absolute background-close align-vertical-horizontal">
-		  		<a href="#!" class="modal-action modal-close design-btn"><i class="material-icons">clear</i></a>
+	    <div class="modal-content">
+		    <div class="position-absolute background-close align-center-icon">
+		  		<a href="#!" class="modal-action modal-close design-btn">
+		  			<i class="material-icons">clear</i>
+	  			</a>
 		  	</div>
-			<div class="row align-vertical-horizontal heigth-full margin-bottom">
-				<div class="col s12 m5">
+			<div class="row margin-bottom">
+				<div class="col s12 m5 align-image-modal">
 					<div class="row">
 						<div class="col s12">
 							<img src="src/image/icon-noticia/image1.jpg" class="width-full responsive-img" />
 						</div>
 						<div class="col s12 align-center width-full">
-							<h6 class="center-text"><strong id="idtitle-modal">SANTA CRUZ CELEBRA EL DIA DE LOS PUEBLOS INDIGENAS</strong></h6>
+							<h6 class="center-text">
+								<strong id="idtitle-modal">SANTA CRUZ CELEBRA EL DIA DE LOS PUEBLOS INDIGENAS</strong>
+							</h6>
 						</div>
 					</div>
 				</div>
@@ -369,48 +382,51 @@
     		</div>
 
     		<div class="col s12 m6 l5 height-vh align-vertical-horizontal">
-    			<div class="row margin-botton">
-    				<div class="col s12">
-    					<h5 class="h5-bold">Contáctanos</h5>
-    				</div>
-    				<div class="input-field col s12">
-          				<input placeholder="Nombre y Apellido" id="first_name" type="text" class="validate">
-          				<label for="first_name">Nombre y Apellido</label>
-    				</div>
-    				<div class="input-field col s12">
-          				<input placeholder="Email" id="first_name" type="email" class="validate" />
-          				<label for="first_name">Email</label>
-    				</div>
-    				<div class="col s12 padding-left">
-    					<div class="row">
-	    					<div class="input-field col s6 margin-botton">
-	    						<label for="first_name">Telefono</label>	
-	    						<input placeholder="Telefono" id="first_name" type="number" class="validate">
-	    					</div>
-	    					<div class="input-field col s6 margin-botton">
-	    						<label for="first_name">Movil</label>
-	    						<input placeholder="Movil" id="first_name" type="number" class="validate">
-	    					</div>
-	    				</div>	
-    				</div>
+	    		<form method="POST">
+	    			<div class="row margin-botton">
+	    				<div class="col s12">
+	    					<h5 class="h5-bold">Contáctanos</h5>
+	    				</div>
+	    				<div class="input-field col s12">
+	          				<input placeholder="Nombre y Apellido" required id="first_name" type="text" class="validate">
+	          				<label for="first_name">Nombre y Apellido</label>
+	    				</div>
+	    				<div class="input-field col s12">
+	          				<input placeholder="Email" id="first_name" required type="email" class="validate" />
+	          				<label for="first_name">Email</label>
+	    				</div>
+	    				<div class="col s12 padding-left">
+	    					<div class="row">
+		    					<div class="input-field col s6 margin-botton">
+		    						<label for="first_name">Telefono</label>	
+		    						<input placeholder="Telefono" required id="first_name" type="number" class="validate">
+		    					</div>
+		    					<div class="input-field col s6 margin-botton">
+		    						<label for="first_name">Movil</label>
+		    						<input placeholder="Movil" required id="first_name" type="number" class="validate">
+		    					</div>
+		    				</div>	
+	    				</div>
 
-    				<div class="input-field col s12">
-    					<textarea id="textarea1" class="materialize-textarea"></textarea>
-    					<label for="textarea1">Comentarios y sugerencias</label>
-    				</div>
+	    				<div class="input-field col s12">
+	    					<textarea id="textarea1" class="materialize-textarea"></textarea>
+	    					<label for="textarea1">Comentarios y sugerencias</label>
+	    				</div>
 
-    				<div class="col s12">
-    					<input type="checkbox" id="test5" />
-      					<label for="test5">Desea recibir los boletines trimestrelas y noticias sobre el ICE</label>
-    				</div>
-    				<div class="row margin-top margin-botton">
-    					<div class="col s4"></div>
-    					<div class="col s4 center-align">
-    						<a class="waves-effect waves-light btn margin-top-btn">Enviar</a>
-    					</div>
-    					<div class="col s4"></div>
-    				</div>
-    			</div>
+	    				<div class="col s12">
+	    					<input type="checkbox" required id="test5" />
+	      					<label for="test5">Desea recibir los boletines trimestrelas y noticias sobre el ICE</label>
+	    				</div>
+	    				<div class="row margin-top margin-botton">
+	    					<div class="col s4"></div>
+	    					<div class="col s4 center-align">
+	    						<input type="submit" value="Enviar" class="waves-effect waves-light btn margin-top-btn">
+	    					</div>
+	    					<div class="col s4"></div>
+	    				</div>
+	    			</div>
+	    		</form>
+    			
     		</div>
     	</div>	
   	</div>

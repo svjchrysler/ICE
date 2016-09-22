@@ -36,6 +36,7 @@ $(document).ready(function(){
 	$('.parallax').parallax();
 
 	function posicionarSomos(e) {
+
 		e.preventDefault()
 		var posicion = $("#idsomos").offset().top;
 		$("html, body").animate({
@@ -87,6 +88,9 @@ $(document).ready(function(){
 		$("html, body").animate({
     		scrollTop: posicion
 		}, 	500);
+
+		$('#idnoticias').removeClass('slideInUp')
+    	$('#idnoticias').addClass('slideInUp')
 	}
 
 
@@ -103,7 +107,7 @@ $(document).ready(function(){
 	}
 
 	$('#iddatahub').click(function() {
-		var changefondo = `<iframe class="iframe-map" allowfullscreen 
+		var changefondo = `<iframe class="iframe-map animated slideInUp" allowfullscreen 
 								src="http://159.203.182.38/visualizadorV2/" 
 								></iframe>`
 
@@ -124,7 +128,7 @@ $(document).ready(function(){
 
 	$('#more-data').click(function() {
 
-		var template_estadistica = `<div class="parallax-container height-vh" id="idestudios">
+		var template_estadistica = `<div class="parallax-container animated bounceInDown height-vh" id="idestudios">
 		<div class="container-fluid padding-top-estadisticas-option" id="slide-estadistica">
 			<div class="row altura-estadistica margin-botton">
 				<div class="col s12 m12">
@@ -517,6 +521,26 @@ $(document).ready(function(){
 
 	$('#modal-6').click(function() {
 		$('#modal1').openModal()
+	})
+
+ 	$('.carousel.carousel-slider').carousel({full_width: true, indicators: true});
+
+ 	$(document).keydown(function(e) {
+		
+ 		var height = $(window).scrollTop();
+
+	    if(height <= ($("#iddatahub").offset().top - 100)) {
+	    	//Right
+			if (e.keyCode == 39) {
+				$('.carousel').carousel('next');
+			}	
+
+			//Left
+			if (e.keyCode == 37) {
+				$('.carousel').carousel('prev');
+			}		
+	    }
+		console.log('evento')
 	})
 
 	var el = '.js-menu';

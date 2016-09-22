@@ -697,6 +697,7 @@ textarea {
 }
 
 body {
+	font-family: 'Ubuntu', sans-serif !important;
 	scrollbar-face-color: #000;
 	scrollbar-track-color: #B8C0C8;
 }
@@ -737,6 +738,32 @@ body {
 	padding-left: 1em;
 	font-weight: 700; 
 	font-size: 2em !important;
+}
+
+.tamano-image-logo {
+	width: 40% !important;
+}
+
+.padding-left-right-carousel {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.text-style-carousel-title {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 2em !important;
+	font-weight: 700 !important;
+	color: #31AA75 !important;
+}
+
+.text-style-carousel {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1em !important;
+	font-weight: 700 !important;
+}
+
+.margin-bottom-carousel {
+	margin-bottom: 0 !important;
 }
 
 /*.filter-blur {

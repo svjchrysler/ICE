@@ -1,10 +1,10 @@
 
-// $('#img-gif').removeAttr('src', '');
-// $('#img-gif').attr('src', 'src/image/logoweb.gif');
+$('#img-gif').removeAttr('src', '');
+$('#img-gif').attr('src', 'src/image/logoweb.gif');
 
-// setTimeout(function() {
-// 	$('#loading').addClass('hide')
-// }, 6500)
+setTimeout(function() {
+	$('#loading').addClass('hide')
+}, 6500)
 
 $(document).ready(function(){
 

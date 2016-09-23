@@ -107,23 +107,23 @@ $(document).ready(function(){
 	}
 
 	$('#iddatahub').click(function() {
-		var changefondo = `<iframe class="iframe-map animated slideInUp" allowfullscreen 
+		var changefondo = `<iframe class="iframe-map animated slideInUp padding-top-datahub" allowfullscreen 
 								src="http://159.203.182.38/visualizadorV2/" 
 								></iframe>`
 
 		var antiguofondo = `<img id="img-datahub" src="src/image/datahub.png" style="transform: display: block;" />`
 
-		if ($('#iddatahub').hasClass('volcado')){
-			$('#iddatahub').removeClass('volcado')
-			$('#iddatahub').addClass('inverso')
-			$('#iddatahub .parallax img').replaceWith(antiguofondo)
-		}
-		else{
-
+		// if ($('#iddatahub').hasClass('volcado')){
+		// 	$('#iddatahub').removeClass('volcado')
+		// 	$('#iddatahub').addClass('inverso')
+		// 	$('#iddatahub .parallax img').replaceWith(antiguofondo)
+		// }
+		// else{
+			$('#iddatahub div').removeClass('padding-top-datahub')
 			$('#iddatahub').removeClass('inverso')
 			$('#iddatahub').addClass('volcado')
 			$('#iddatahub .parallax img').replaceWith(changefondo)
-		}
+		// }
 	})
 
 	$('#more-data').click(function() {

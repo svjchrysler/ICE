@@ -250,8 +250,6 @@ $(document).ready(function(){
 		$('.remove-option').addClass('hide')
 		$('#idestudios').addClass('volcado')
 		$('#idestudios').replaceWith(template_estadistica)
-
-
 	})
 
 	$(window).scroll(function() {

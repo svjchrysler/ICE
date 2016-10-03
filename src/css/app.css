@@ -1,4 +1,10 @@
 
+body {
+	font-family: 'Ubuntu', sans-serif !important;
+	scrollbar-face-color: #000;
+	scrollbar-track-color: #B8C0C8;
+}
+
 .title-logo {
 	font-size: 1em;
 	font-weight: 700;
@@ -843,12 +849,6 @@ textarea {
 	background: #B8C0C8;
 }
 
-body {
-	font-family: 'Ubuntu', sans-serif !important;
-	scrollbar-face-color: #000;
-	scrollbar-track-color: #B8C0C8;
-}
-
 .tamano-icon-back {
 	z-index: 2020;
 	font-weight: 700;
@@ -888,7 +888,7 @@ body {
 }
 
 .tamano-image-logo {
-	width: 50% !important;
+	width: 30% !important;
 }
 
 .padding-left-right-carousel {

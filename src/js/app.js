@@ -24,12 +24,12 @@ $(document).ready(function(){
 	function redimecionar() {
 		if ($(window).width() < 620 || $(document).width() < 620) {
 			$('#idmenu').removeClass('center-menu')	
-			$('#img-datahub').attr('src', 'src/image/vertical.jpg')
+			$('#img-datahub').attr('src', 'ICE/src/image/vertical.jpg')
 		}
 
 		if($(window).width() > 620 || $(document).width() > 620) {
 			$('#idmenu').addClass('center-menu')
-			$('#img-datahub').attr('src', 'src/image/datahub.png')
+			$('#img-datahub').attr('src', 'ICE/src/image/datahub.png')
 		}
 	}
 
@@ -111,7 +111,7 @@ $(document).ready(function(){
 								src="http://159.203.182.38/visualizadorV2/" 
 								></iframe>`
 
-		var antiguofondo = `<img id="img-datahub" src="src/image/datahub.png" style="transform: display: block;" />`
+		var antiguofondo = `<img id="img-datahub" src="ICE/src/image/datahub.png" style="transform: display: block;" />`
 
 		// if ($('#iddatahub').hasClass('volcado')){
 		// 	$('#iddatahub').removeClass('volcado')
@@ -135,43 +135,43 @@ $(document).ready(function(){
 					<div class="row altura-estadistica-up">
 						<div class="col s12 m3 altura-estadistica-up">
 							<a href="estadistica.html">
-								<img src="src/image/image-estadisticas/cuadrado.jpg" class="responsive-img" width="100%">
+								<img src="ICE/src/image/image-estadisticas/cuadrado.jpg" class="responsive-img" width="100%">
 							</a>
 						</div>
 						<div class="col s12 m2 altura-estadistica-up">
 							<a href="estadistica.html">
-								<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+								<img src="ICE/src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
 							</a>
 						</div>
 						<div class="col s12 m5 altura-estadistica-up">
 							<div class="row altura-up-porcion">
 								<div class="col s12 m7 ">
 									<a href="#!">
-										<img src="src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
+										<img src="ICE/src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
 									</a>
 								</div>
 								<div class="col s12 m5">
 									<a href="#!">
-										<img src="src/image/image-estadisticas/featured31.jpg" class="responsive-img" width="100%">
+										<img src="ICE/src/image/image-estadisticas/featured31.jpg" class="responsive-img" width="100%">
 									</a>
 								</div>
 							</div>
 							<div class="row altura-down-porcion">
 								<div class="col s12 m5">
 									<a href="#!">
-										<img src="src/image/image-estadisticas/featured31.jpg" class="responsive-img" width="100%">
+										<img src="ICE/src/image/image-estadisticas/featured31.jpg" class="responsive-img" width="100%">
 									</a>
 								</div>
 								<div class="col s12 m7">
 									<a href="#!">
-										<img src="src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
+										<img src="ICE/src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
 									</a>
 								</div>
 							</div>
 						</div>
 						<div class="col s12 m2 altura-estadistica-up">
 							<a href="#!">
-								<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+								<img src="ICE/src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
 							</a>
 						</div>
 					</div>
@@ -183,22 +183,22 @@ $(document).ready(function(){
 									<div class="row">
 										<div class="col s12 m3">
 											<a href="estadistica.html">
-												<img src="src/image/image-estadisticas/featured31.jpg" class="responsive-img" width="100%">
+												<img src="ICE/src/image/image-estadisticas/featured31.jpg" class="responsive-img" width="100%">
 											</a>
 										</div>
 										<div class="col s12 m3">
 											<a href="#!">
-												<img src="src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
+												<img src="ICE/src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
 											</a>
 										</div>
 										<div class="col s12 m3">
 											<a href="#!">
-												<img src="src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
+												<img src="ICE/src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
 											</a>
 										</div>
 										<div class="col s12 m3">
 											<a href="#!">
-												<img src="src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
+												<img src="ICE/src/image/image-estadisticas/horizontal1.jpg" class="responsive-img" width="100%">
 											</a>
 										</div>		
 									</div>
@@ -208,27 +208,27 @@ $(document).ready(function(){
 									<div class="row">
 										<div class="col s12 m2">
 											<a href="#!">
-												<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+												<img src="ICE/src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
 											</a>
 										</div>
 										<div class="col s12 m3">
 											<a href="#!">
-												<img src="src/image/image-estadisticas/cuadrado.jpg" class="responsive-img" width="100%">
+												<img src="ICE/src/image/image-estadisticas/cuadrado.jpg" class="responsive-img" width="100%">
 											</a>
 										</div>
 										<div class="col s12 m2">
 											<a href="#!">
-												<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+												<img src="ICE/src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
 											</a>
 										</div>
 										<div class="col s12 m3">
 											<a href="#!">
-												<img src="src/image/image-estadisticas/cuadrado.jpg" class="responsive-img" width="100%">
+												<img src="ICE/src/image/image-estadisticas/cuadrado.jpg" class="responsive-img" width="100%">
 											</a>
 										</div>
 										<div class="col s12 m2">
 											<a href="#!">
-												<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+												<img src="ICE/src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
 											</a>
 										</div>
 									</div>
@@ -237,7 +237,7 @@ $(document).ready(function(){
 						</div>
 						<div class="col s12 m2 altura-estadistica-down-total">
 							<a href="#!">
-								<img src="src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+								<img src="ICE/src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
 							</a>
 						</div>
 					</div>

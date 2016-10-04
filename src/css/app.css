@@ -393,7 +393,7 @@ textarea {
 
 .altura-estadistica {
 	height: 100vh !important;
-	overflow: scroll !important;
+	overflow-x: scroll;
 	padding: 0 !important;
 }
 
@@ -489,7 +489,7 @@ textarea {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
 	.text-style-carousel-title {
 		font-size: 1em !important;
 	}
@@ -623,8 +623,11 @@ textarea {
 	}
 }
 
-
 @media only screen and (max-width : 480px) { 
+
+	.tamano-image-logo {
+		width: 60% !important;
+	}
 
 	.carousel.carousel-slider .carousel-item p {
 		font-size: .6em !important;
@@ -744,6 +747,11 @@ textarea {
 
 	.text-style-carousel {
 		font-size: .5em;
+	}
+
+	.clear-margin-padding-estadistica {
+		margin: 0 !important;
+		padding: 0 !important;
 	}
 }
 
@@ -849,6 +857,15 @@ textarea {
 	background: #B8C0C8;
 }
 
+::-moz-scrollbar {
+	width: 0.5em;
+	height: 0.5em;	
+}
+
+::-moz-scrollbar {
+	background: #B8C0C8;
+}
+
 .tamano-icon-back {
 	z-index: 2020;
 	font-weight: 700;
@@ -920,6 +937,30 @@ body {
 .margin-top-slider {
 	margin-top: 15em !important;
 }
+
+.margin-top-back {
+	top: 2.5em !important;
+	width: 6em !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.ocultar-element-exec {
+	overflow: hidden !important;
+}
+
+.cursor-pointer {
+	cursor: pointer !important;
+}
+
+.margin-clean {
+	margin: 0 !important;
+}
+
+.max-height-text-area {
+	max-height: 7em;
+}
+
 
 /*.filter-blur {
 	-webkit-filter: blur(0px) !important;

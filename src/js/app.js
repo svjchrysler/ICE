@@ -128,7 +128,12 @@ $(document).ready(function(){
 
 	$('#more-data').click(function() {
 
-		var template_estadistica = `<div class="parallax-container animated bounceInDown height-vh" id="idestudios">
+		var template_estadistica = `<div class="parallax-container animated bounceInDown height-vh" onclick="regresarMenuAnterior()" id="idestudios">
+  		
+		<a href="#!" id="btn-atras-estadisticas" class="background-btn-back tamano-icon-back position-abs align-vertical-horizontal color-icon-back margin-top-back">
+			<i class="large material-icons color-icon-back">keyboard_arrow_left</i>	
+		</a>
+  		
 		<div class="container-fluid padding-top-estadisticas-option" id="slide-estadistica">
 			<div class="row altura-estadistica margin-botton">
 				<div class="col s12 m12">
@@ -171,7 +176,7 @@ $(document).ready(function(){
 						</div>
 						<div class="col s12 m2 altura-estadistica-up">
 							<a href="#!">
-								<img src="ICE/src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%">
+								<img src="ICE/src/image/image-estadisticas/height-large.jpg" class="responsive-img" width="100%" />
 							</a>
 						</div>
 					</div>
@@ -538,7 +543,6 @@ $(document).ready(function(){
 				$('.carousel').carousel('prev');
 			}		
 	    }
-		console.log('evento')
 	})
 
 	var el = '.js-menu';
@@ -557,3 +561,167 @@ $(document).ready(function(){
   	var myMenu = cssCircleMenu(el4)
 
 });
+
+function regresarMenuAnterior() {
+	$('#btn-atras-estadisticas').click(function() {
+		var template_estadistica = `<div class="parallax-container height-vh align-vertical-horizontal background-somos" id="idestudios">
+    	<div id="content-option" class="row width-full custom-box">
+
+    		<div class="col m1 l1 hide-on-small-only"></div>
+
+    		<div class="col s12 m2 l2 margin-top-menu-1" id="content-option-1">
+    			<div class="c-circle-menu js-menu-4 align-circle">
+					
+					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp elevacion-option" id="option-1" >
+						<img src="ICE/src/image/icons/agricultura.png" class="position-abs custom-circle">
+					</div>
+				  	<ul class="c-circle-menu__items">
+				    	<li class="c-circle-menu__item" id="sub-1-option-1">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/agricultura.png" class="position-abs custom-circle" />
+				      		</a>
+				    	</li>
+				    	<li class="c-circle-menu__item" id="sub-2-option-1">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/agricultura.png" class="position-abs custom-circle" />
+				      		</a>
+				    	</li>
+				    	<li class="c-circle-menu__item" id="sub-3-option-1">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/agricultura.png" class="position-abs custom-circle" />
+				      		</a>
+				    	</li>
+				  	</ul>
+				  	<div class="c-circle-menu__mask js-menu-mask"></div>
+				</div>
+    		</div>
+
+    		<div class="col s12 m2 l2 margin-top-menu-2" id="content-option-2">
+				<div class="c-circle-menu js-menu-3 align-circle">
+					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp elevacion-option" id="option-2" >
+						<img src="ICE/src/image/icons/exportacion.png" class="position-abs custom-circle">
+					</div>
+				  	<ul class="c-circle-menu__items">
+				    	<li class="c-circle-menu__item">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/exportacion.png" />
+				      		</a>
+				    	</li>
+				    	<li class="c-circle-menu__item">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/exportacion.png" />
+				      		</a>
+				    	</li>
+				    	<li class="c-circle-menu__item">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/exportacion.png" />
+				      		</a>
+				    	</li>
+				  	</ul>
+				  	<div class="c-circle-menu__mask js-menu-mask"></div>
+				</div>
+    		</div>
+
+    		<div class="col s12 m2 l2 margin-top-menu-3" id="content-option-3">
+				<div class="c-circle-menu js-menu-2 align-circle">
+					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp elevacion-option" id="option-3">
+						<img src="ICE/src/image/icons/people.png" class="position-abs custom-circle">
+					</div>
+				  	<ul class="c-circle-menu__items">
+				    	<li class="c-circle-menu__item">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/sub-icons/person_1.png" />
+				      		</a>
+				    	</li>
+				    	<li class="c-circle-menu__item">
+				      		<a href="estadistica.html" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/sub-icons/person_2.png" />
+				      		</a>
+				    	</li>
+				    	<li class="c-circle-menu__item">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/sub-icons/person_3.png" />
+				      		</a>
+				    	</li>
+				  	</ul>
+				  	<div class="c-circle-menu__mask js-menu-mask"></div>
+				</div>
+    		</div>
+
+    		<div class="col s12 m2 l2 margin-top-menu-2" id="content-option-4">
+				<div class="c-circle-menu js-menu-1 align-circle">
+					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp elevacion-option" id="option-4" >
+						<img src="ICE/src/image/icons/ganaderia.png" class="position-abs custom-circle">
+					</div>
+				  	<ul class="c-circle-menu__items">
+				    	<li class="c-circle-menu__item">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/ganaderia.png" />
+				      		</a>
+				    	</li>
+				    	<li class="c-circle-menu__item">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/ganaderia.png" />
+				      		</a>
+				    	</li>
+				    	<li class="c-circle-menu__item">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/ganaderia.png" />
+				      		</a>
+				    	</li>
+				  	</ul>
+				  	<div class="c-circle-menu__mask js-menu-mask"></div>
+				</div>
+    		</div>
+
+    		<div class="col s12 m2 l2 margin-top-menu-1" id="content-option-5">
+				<div class="c-circle-menu js-menu align-circle">
+					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block align-mp elevacion-option" id="option-5">
+						<img src="ICE/src/image/icons/industria.png" class="position-abs custom-circle">
+					</div>
+				  	<ul class="c-circle-menu__items">
+				    	<li class="c-circle-menu__item">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/industria.png" />
+				      		</a>
+				    	</li>
+				    	<li class="c-circle-menu__item">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/industria.png" />
+				      		</a>
+				    	</li>
+				    	<li class="c-circle-menu__item">
+				      		<a href="#!" class="c-circle-menu__link">
+			        			<img src="ICE/src/image/icons/industria.png" />
+				      		</a>
+				    	</li>
+				  	</ul>
+				  	<div class="c-circle-menu__mask js-menu-mask"></div>
+				</div>
+    		</div>
+
+    		<div class="col m1 l1 hide-on-small-only"></div>
+    	</div>
+  	</div>`
+
+  		$('.remove-option').removeClass('hide')
+  		$('#idestudios').addClass('volcado')
+  		$('#idestudios').replaceWith(template_estadistica)
+
+	})
+}
+
+// (function(i,s,o,g,r,a,m) {
+// 	i['GoogleAnalyticsObject']=r;
+// 	i[r]=i[r]||function(){
+// 			(i[r].q=i[r].q||[]).push(arguments)
+// 		},i[r].l=1*new Date();
+// 		a = s.createElement(o),m=s.getElementsByTagName(o)[0];
+// 		console.log(a)
+// 		a.async = 1;
+// 		a.src = g;
+// 		m.parentNode.insertBefore(a, m)
+// 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+// ga('create', 'UA-85219502-1', 'auto');
+// ga('send', 'pageview');

@@ -522,11 +522,6 @@ textarea {
 		margin-top: 0;
 	}
 
-	.align-image-modal {
-		height: 40vh !important;
-		overflow: hidden;
-	}
-
 	.max-altura {
 		max-height: 50vh !important;
 		overflow: hidden;
@@ -884,7 +879,7 @@ textarea {
 }
 
 .align-image-modal {
-	height: 60vh !important;
+	height: 60vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
